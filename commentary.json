@@ -1,30 +1,86 @@
 {
-    "56.1": "WKAdithya Ashok to Schalk Engelbrecht:Bowled!. No Run.",
-    "55.6": "1Jayden Lennox to Schalk Engelbrecht: One Run.",
-    "55.5": "2Jayden Lennox to Schalk Engelbrecht: Two Runs.",
-    "55.4": "4Jayden Lennox to Schalk Engelbrecht:Four.",
-    "55.3": "1Jayden Lennox to Tsepo Ndwandwa: One Run.",
-    "55.2": "0Jayden Lennox to Tsepo Ndwandwa: No Run.",
-    "55.1": "0Jayden Lennox to Tsepo Ndwandwa: No Run.",
-    "54.6": "4Adithya Ashok to Schalk Engelbrecht:Four.",
-    "54.5": "1Adithya Ashok to Tsepo Ndwandwa: One Run.",
-    "54.4": "0Adithya Ashok to Tsepo Ndwandwa: No Run.",
-    "54.3": "0Adithya Ashok to Tsepo Ndwandwa: No Run.",
-    "54.2": "1Adithya Ashok to Schalk Engelbrecht: One Run.",
-    "54.1": "1Adithya Ashok to Tsepo Ndwandwa: One Run.",
-    "53.6": "0Zakary Foulkes to Schalk Engelbrecht: No Run.",
-    "53.5": "0Zakary Foulkes to Schalk Engelbrecht: No Run.",
-    "53.4": "0Zakary Foulkes to Schalk Engelbrecht: No Run.",
-    "53.3": "0Zakary Foulkes to Schalk Engelbrecht: No Run.",
-    "53.2": "0Zakary Foulkes to Schalk Engelbrecht: No Run.",
-    "53.1": "0Zakary Foulkes to Schalk Engelbrecht: No Run.",
-    "52.6": "0Adithya Ashok to Tsepo Ndwandwa: No Run.",
-    "52.5": "0Adithya Ashok to Tsepo Ndwandwa: No Run.",
-    "52.4": "0Adithya Ashok to Tsepo Ndwandwa: No Run.",
-    "52.3": "2Adithya Ashok to Tsepo Ndwandwa: Two Runs.",
-    "52.2": "0Adithya Ashok to Tsepo Ndwandwa: No Run.",
-    "52.1": "1Adithya Ashok to Schalk Engelbrecht: One Run.",
-    "51.6": "0Zakary Foulkes to Tsepo Ndwandwa: No Run.",
-    "51.5": "1Zakary Foulkes to Schalk Engelbrecht: One Run.",
-    "51.4": "0Zakary Foulkes to Schalk Engelbrecht: No Run."
+    "5.5": {
+        "comment": "0Ehsan Khan to Sediqullah Atal: No Run. Flighted off-break outside off, drives it hard to cover",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "5.4": {
+        "comment": "1Ehsan Khan to Mohammad Nabi: One Run. Fuller arm ball on leg, flicks it to deep mid wicket for a run",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "5.3": {
+        "comment": "0Ehsan Khan to Mohammad Nabi: No Run. Length ball outside off, looks to cut it but misses out",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "5.2": {
+        "comment": "0Ehsan Khan to Mohammad Nabi: No Run. Was an arm ball on length on middle, inside edges it onto the pad of the keeper",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "5.1": {
+        "comment": "2Ehsan Khan to Mohammad Nabi: Two Runs. Quicker and flatter on leg, nudges it towards mid wicket, Ehsan himself goes after it but can't stop the 2nd run",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "4.6": {
+        "comment": "1Ayush Shukla to Mohammad Nabi: One Run. Length ball on off, punches it to mid on for a quick run",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "4.5": {
+        "comment": "1Ayush Shukla to Sediqullah Atal: One Run. Full ball outside off, drives it down to long off for a run",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "4.4": {
+        "comment": "2Ayush Shukla to Sediqullah Atal: Two Runs. Full ball on middle, flicks it wide of deep square leg for a couple of runs",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "4.3": {
+        "comment": "1Ayush Shukla to Mohammad Nabi: One Run. Length ball outside off, taps it towards cover for a quick run",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "4.2": {
+        "comment": "1Ayush Shukla to Sediqullah Atal: One Run. Good length ball on off, pushes it to mid on for a quick run",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "4.1": {
+        "comment": "WDAyush Shukla to Sediqullah Atal: Wide Ball. One Run.",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "3.6": {
+        "comment": "0Ateeq Iqbal to Mohammad Nabi: No Run.A wicket-maiden from Iqbal!Was a good length ball on middle, nudges it to mid on",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "3.5": {
+        "comment": "0Ateeq Iqbal to Mohammad Nabi: No Run. Good length ball on middle and leg, looks to flick it but gets hit on the pad and the ball loops on the leg-side, Atal was off for a run but was sent back by Nabi",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "3.4": {
+        "comment": "0Ateeq Iqbal to Mohammad Nabi: No Run. Length ball on off, punches it to backward point",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "3.3": {
+        "comment": "0Ateeq Iqbal to Mohammad Nabi: No Run. Back of length ball outside off, looks to cut it away but misses out",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "3.2": {
+        "comment": "WKAteeq Iqbal to Ibrahim Zadran:Wicket!Caught By Zeeshan Ali. No Run.2nd wicket inside the power play!Was a good length ball outside off, looks to drive it on the up but gets a thick outside edge through to Zeeshan who completes a great sharp catch while standing upto the stumps.",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "3.1": {
+        "comment": "0Ateeq Iqbal to Ibrahim Zadran: No Run. Good length ball outside off, drives it straight to extra cover",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "2.6": {
+        "comment": "0Ayush Shukla to Sediqullah Atal: No Run. Half-volley outside off, drives it hard but straight to cover",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "2.5": {
+        "comment": "0Ayush Shukla to Sediqullah Atal: No Run. Over-pitched ball on off, drives it to cover",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "2.4": {
+        "comment": "1Ayush Shukla to Ibrahim Zadran: One Run. Good length ball on middle, flicks it wide of mid on for a run and Ibrahim is off the mark",
+        "timestamp": "2025-09-09 20:33:06"
+    },
+    "2.3": {
+        "comment": "0Ayush Shukla to Ibrahim Zadran: No Run. Back of length ball outside off, punches it to cover",
+        "timestamp": "2025-09-09 20:33:06"
+    }
 }

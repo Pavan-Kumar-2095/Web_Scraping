@@ -4,6 +4,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import re
+from datetime import datetime  
+
 
 def load_existing_comments(filename="commentary.json"):
     try:
@@ -35,23 +37,26 @@ def fetch_match_info_and_commentary(driver, url):
     match_datetime = match_datetime_tag.get_text(strip=True).replace('●', '|') if match_datetime_tag else "Date/Time not found"
 
     comment_items = soup.find_all('div', class_='comment_listing')
-
+    
     commentary_dict = {}
     for item in comment_items:
         text = item.get_text(strip=True)
-        
+    
         match = re.match(r'^(\d+\.\d)(.*)', text)
 
-        parts = text.split(' ', 1)
         if match:
             ball_number = match.group(1)
-            comment = match.group(2)
-            commentary_dict[ball_number] = comment
+            comment = match.group(2).strip()
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # Current timestamp
+            commentary_dict[ball_number] = {
+                "comment": comment,
+                "timestamp": timestamp
+            }
 
     return match_title, match_datetime, commentary_dict
 
 def main():
-    url = "https://cricketlineguru.com/match-detail/rsaa_vs_nza_2025_1unte/commentary/south-africa-a-vs-new-zealand-a-1st-unofficial-test"
+    url = "https://cricketlineguru.com/match-detail/asia_cup_2025_g1/commentary/afghanistan-vs-hong-kong-1st-match-group-b"
 
     options = Options()
     options.headless = True
