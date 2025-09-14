@@ -93,7 +93,7 @@ for index, section in enumerate(sections, 1):
         print(f"{index}. ⚠️ Error extracting sport or matches: {e}")
 
 
-with open("sports_matches.json", "w", encoding="utf-8") as f:
+with open("WikSpinLiv_1.json", "w", encoding="utf-8") as f:
     json.dump(all_sports, f, indent=4, ensure_ascii=False)
 
 print("✅ Data saved to sports_matches.json")
