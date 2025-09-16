@@ -1,0 +1,54 @@
+{
+    "market_depth": {
+        "min/max": "1/50"
+    },
+    "exchange_odds": [
+        {
+            "team": "New South Wales Blues",
+            "back": {
+                "odds": "1.05",
+                "volume": "1,824.28"
+            },
+            "lay": {
+                "odds": "1.06",
+                "volume": "324.53"
+            }
+        },
+        {
+            "team": "Tasmania Tigers",
+            "back": {
+                "odds": "17.5",
+                "volume": "19.89"
+            },
+            "lay": {
+                "odds": "18",
+                "volume": "106.42"
+            }
+        }
+    ],
+    "fancy_markets": [
+        {
+            "title": "50 Over Run TT",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        }
+    ],
+    "nested_iframe_url": "https://widget.decimalcricket.net/?id=1000160148LIVE2025&foregroundColor=%231e1e1e&frameForegroundColor=%231e1e1e&backgroundColor=%23f2f2f2&frameBackgroundColor=%23efefef&teamFontSize=14px&layout=single&showHeader=false",
+    "teams": [
+        {
+            "team_name": "NSW",
+            "score": "224/10\n49.4 /50 Ovs"
+        },
+        {
+            "team_name": "TAS",
+            "score": "134/8\n31.0 /50 Ovs"
+        }
+    ]
+}

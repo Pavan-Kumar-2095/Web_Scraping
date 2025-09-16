@@ -3,41 +3,43 @@
         "sport": "Cricket",
         "matches": [
             "India W - Australia W",
-            "South Zone - Central Zone",
-            "Hulu Langat Tornadoes - Sepang Strickers",
-            "Chennai (V) - Hyderabad (V)",
-            "Imperial Lions - Western Province",
-            "SRH Legends (V) - RCB Legends (V)",
-            "Kolkata (V) - Gujarat (V)",
-            "Delhi (V) - Mumbai (V)",
-            "Sylhet Division - Rangpur Division",
-            "India (V) - Sri Lanka (V)",
             "South Africa A - New Zealand A",
-            "New Zealand (V) - West Indies (V)",
+            "The Titans - Dolphins Cricket",
+            "KKR Legends (V) - MI Legends (V)",
+            "Delhi (V) - Warriorz Women (V)",
+            "Rajasthan (V) - Chennai (V)",
+            "Pakistan (V) - New Zealand (V)",
             "Punjab (V) - Gujarat (V)"
         ]
     },
     {
         "sport": "Soccer",
         "matches": [
-            "WSE - Sham Shui Po",
-            "Eastern District SA - Kitchee SC",
-            "South China - Kwun Tong",
-            "FC Liefering - SV Austria Salzburg",
-            "3 Sing FC - Yuen Long",
-            "Hong Kong FC - Hong Kong Rangers FC"
+            "Celta Vigo - Girona",
+            "Southampton - Portsmouth",
+            "Greuther Furth - Kaiserslautern",
+            "Winterthur - Sion",
+            "SV Ried - Hartberg",
+            "Elversberg - Dynamo Dresden",
+            "Preussen Munster - Fortuna Dusseldorf",
+            "Antwerp - Gent",
+            "Paide Linnameeskond - Nomme Kalju",
+            "Dalian Yingbo - Shenzhen Peng City",
+            "FC Utrecht - FC Groningen",
+            "Heracles - AZ Alkmaar",
+            "Djurgardens - Hammarby",
+            "FK Jablonec - Pardubice",
+            "Balestier Khalsa - Lion City Sailors FC",
+            "Viborg - AGF",
+            "Kalmar FF - Vasteras SK",
+            "Andorra CF - Cordoba",
+            "Bryne - Tromso"
         ]
     },
     {
         "sport": "Tennis",
         "matches": [
-            "Zakharova - El Seidel",
-            "Mar ToPo - Ja Graski",
-            "Be Ricci - T Pieri",
-            "An Kucmova - No Noha Akugue",
-            "To Paris - Catry",
-            "Aleksandar Vukic - Raphael Collignon",
-            "Luz - Tade Paroulek"
+            "Ursu - Potenza"
         ]
     }
 ]
