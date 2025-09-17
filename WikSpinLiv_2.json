@@ -1,34 +1,46 @@
 {
     "market_depth": {
-        "min/max": "1/50"
+        "min/max": "1/1,000"
     },
     "exchange_odds": [
         {
-            "team": "New South Wales Blues",
+            "team": "India W",
             "back": {
-                "odds": "1.05",
-                "volume": "1,824.28"
+                "odds": "2.6",
+                "volume": "1,407.98"
             },
             "lay": {
-                "odds": "1.06",
-                "volume": "324.53"
+                "odds": "2.64",
+                "volume": "701.63"
             }
         },
         {
-            "team": "Tasmania Tigers",
+            "team": "Australia W",
             "back": {
-                "odds": "17.5",
-                "volume": "19.89"
+                "odds": "1.61",
+                "volume": "989.58"
             },
             "lay": {
-                "odds": "18",
-                "volume": "106.42"
+                "odds": "1.62",
+                "volume": "2,034.59"
             }
         }
     ],
     "fancy_markets": [
         {
-            "title": "50 Over Run TT",
+            "title": "Only 17 Over Run IND-W",
+            "status": "Active",
+            "no": {
+                "odds": "N/A",
+                "value": "N/A"
+            },
+            "yes": {
+                "odds": "N/A",
+                "value": "100"
+            }
+        },
+        {
+            "title": "16 Over Run IND-W",
             "status": "Suspend",
             "no": {
                 "odds": null,
@@ -38,17 +50,188 @@
                 "odds": null,
                 "value": null
             }
-        }
-    ],
-    "nested_iframe_url": "https://widget.decimalcricket.net/?id=1000160148LIVE2025&foregroundColor=%231e1e1e&frameForegroundColor=%231e1e1e&backgroundColor=%23f2f2f2&frameBackgroundColor=%23efefef&teamFontSize=14px&layout=single&showHeader=false",
-    "teams": [
-        {
-            "team_name": "NSW",
-            "score": "224/10\n49.4 /50 Ovs"
         },
         {
-            "team_name": "TAS",
-            "score": "134/8\n31.0 /50 Ovs"
+            "title": "19 Over Run IND-W",
+            "status": "Active",
+            "no": {
+                "odds": "102",
+                "value": "110"
+            },
+            "yes": {
+                "odds": "102",
+                "value": "90"
+            }
+        },
+        {
+            "title": "20 Over Run IND-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "25 Over Run IND-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "50 Over Run IND-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Fall of 2nd Wkt IND-W",
+            "status": "Active",
+            "no": {
+                "odds": "115",
+                "value": "110"
+            },
+            "yes": {
+                "odds": "115",
+                "value": "90"
+            }
+        },
+        {
+            "title": "Fall of 3rd Wkt IND-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Fall of 4th Wkt IND-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Harleen Deol Runs",
+            "status": "Active",
+            "no": {
+                "odds": "34",
+                "value": "110"
+            },
+            "yes": {
+                "odds": "34",
+                "value": "90"
+            }
+        },
+        {
+            "title": "Smriti Mandhana Runs",
+            "status": "Active",
+            "no": {
+                "odds": "N/A",
+                "value": "N/A"
+            },
+            "yes": {
+                "odds": "N/A",
+                "value": "N/A"
+            }
+        },
+        {
+            "title": "Harleen Deol Boundaries",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Smriti Mandhana Boundaries",
+            "status": "Active",
+            "no": {
+                "odds": "12",
+                "value": "115"
+            },
+            "yes": {
+                "odds": "12",
+                "value": "85"
+            }
+        },
+        {
+            "title": "2nd Wkt Pship Boundaries IND-W",
+            "status": "Active",
+            "no": {
+                "odds": "5",
+                "value": "100"
+            },
+            "yes": {
+                "odds": "6",
+                "value": "100"
+            }
+        },
+        {
+            "title": "How Many Balls Face By Harleen Deol",
+            "status": "Active",
+            "no": {
+                "odds": "53",
+                "value": "110"
+            },
+            "yes": {
+                "odds": "53",
+                "value": "90"
+            }
+        },
+        {
+            "title": "How Many Balls Face By Smriti Mandhana",
+            "status": "Active",
+            "no": {
+                "odds": "84",
+                "value": "115"
+            },
+            "yes": {
+                "odds": "84",
+                "value": "95"
+            }
+        },
+        {
+            "title": "2nd Wkt Lost To IND-W Balls",
+            "status": "Active",
+            "no": {
+                "odds": "130",
+                "value": "110"
+            },
+            "yes": {
+                "odds": "130",
+                "value": "90"
+            }
         }
-    ]
+    ],
+    "nested_iframe_url": null,
+    "teams": []
 }
