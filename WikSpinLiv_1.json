@@ -2,44 +2,34 @@
     {
         "sport": "Cricket",
         "matches": [
-            "India W - Australia W",
-            "South Africa A - New Zealand A",
-            "The Titans - Dolphins Cricket",
-            "KKR Legends (V) - MI Legends (V)",
-            "Delhi (V) - Warriorz Women (V)",
-            "Rajasthan (V) - Chennai (V)",
-            "Pakistan (V) - New Zealand (V)",
-            "Punjab (V) - Gujarat (V)"
+            {
+                "match": "India W - Australia W",
+                "url": "https://www.wickspin24.live/#/full-market/4-34744529?marketId=1.247921946",
+                "fancy_bet": true,
+                "sportsbook": true
+            }
         ]
     },
     {
         "sport": "Soccer",
         "matches": [
-            "Celta Vigo - Girona",
-            "Southampton - Portsmouth",
-            "Greuther Furth - Kaiserslautern",
-            "Winterthur - Sion",
-            "SV Ried - Hartberg",
-            "Elversberg - Dynamo Dresden",
-            "Preussen Munster - Fortuna Dusseldorf",
-            "Antwerp - Gent",
-            "Paide Linnameeskond - Nomme Kalju",
-            "Dalian Yingbo - Shenzhen Peng City",
-            "FC Utrecht - FC Groningen",
-            "Heracles - AZ Alkmaar",
-            "Djurgardens - Hammarby",
-            "FK Jablonec - Pardubice",
-            "Balestier Khalsa - Lion City Sailors FC",
-            "Viborg - AGF",
-            "Kalmar FF - Vasteras SK",
-            "Andorra CF - Cordoba",
-            "Bryne - Tromso"
+            {
+                "match": "Cerezo Osaka - Kashiwa",
+                "url": "https://www.wickspin24.live/#/full-market/1-34730264?marketId=1.247723178",
+                "fancy_bet": false,
+                "sportsbook": true
+            }
         ]
     },
     {
         "sport": "Tennis",
         "matches": [
-            "Ursu - Potenza"
+            {
+                "match": "Emma Navarro - Sonay Kartal",
+                "url": "https://www.wickspin24.live/#/full-market/2-34754777?marketId=1.247999370",
+                "fancy_bet": false,
+                "sportsbook": true
+            }
         ]
     }
 ]

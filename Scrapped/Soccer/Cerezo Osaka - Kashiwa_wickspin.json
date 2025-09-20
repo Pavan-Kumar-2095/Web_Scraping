@@ -1,0 +1,43 @@
+{
+    "market_depth": {
+        "min/max": "1/500"
+    },
+    "exchange_odds": [
+        {
+            "team": "Cerezo Osaka",
+            "back": {
+                "odds": "2.88",
+                "volume": "133.46"
+            },
+            "lay": {
+                "odds": "2.94",
+                "volume": "433.47"
+            }
+        },
+        {
+            "team": "Kashiwa",
+            "back": {
+                "odds": "3.2",
+                "volume": "12.53"
+            },
+            "lay": {
+                "odds": "3.25",
+                "volume": "68.61"
+            }
+        },
+        {
+            "team": "The Draw",
+            "back": {
+                "odds": "2.88",
+                "volume": "125.92"
+            },
+            "lay": {
+                "odds": "2.9",
+                "volume": "50.8"
+            }
+        }
+    ],
+    "fancy_markets": [],
+    "nested_iframe_url": null,
+    "teams": []
+}

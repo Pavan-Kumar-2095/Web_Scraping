@@ -1,0 +1,186 @@
+{
+    "market_depth": {
+        "min/max": "1/1,000"
+    },
+    "exchange_odds": [
+        {
+            "team": "India W",
+            "back": {
+                "odds": "26",
+                "volume": "278.37"
+            },
+            "lay": {
+                "odds": "28",
+                "volume": "123.5"
+            }
+        },
+        {
+            "team": "Australia W",
+            "back": {
+                "odds": "1.03",
+                "volume": "165K"
+            },
+            "lay": {
+                "odds": "1.04",
+                "volume": "6,959.33"
+            }
+        }
+    ],
+    "fancy_markets": [
+        {
+            "title": "Only 36 Over Run AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "35 Over Run AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "36 Over Run AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "39 Over Run AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "40 Over Run AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "50 Over Run AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Fall of 4th Wkt AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Beth Mooney Runs",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Ashleigh Gardner Runs",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Beth Mooney Boundaries",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "Ashleigh Gardner Boundaries",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        },
+        {
+            "title": "4th Wkt Pship Boundaries AUS-W",
+            "status": "Suspend",
+            "no": {
+                "odds": null,
+                "value": null
+            },
+            "yes": {
+                "odds": null,
+                "value": null
+            }
+        }
+    ],
+    "nested_iframe_url": "https://widget.decimalcricket.net/?id=1000160119LIVE2025&foregroundColor=%231e1e1e&frameForegroundColor=%231e1e1e&backgroundColor=%23f2f2f2&frameBackgroundColor=%23efefef&teamFontSize=14px&layout=single&showHeader=false",
+    "teams": [
+        {
+            "team_name": "",
+            "score": "0/0\n0.0 /50 Ovs"
+        },
+        {
+            "team_name": "",
+            "score": "263/3\n34.5 /50 Ovs"
+        }
+    ]
+}

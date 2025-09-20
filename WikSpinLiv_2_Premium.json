@@ -1,19 +1,1175 @@
 {
-  "timestamp": "2025-09-18T04:40:17.716413Z",
-  "scoreboard": [
-    {
-      "team": "ENG",
-      "score": "49/2 (4.2/5)"
-    },
-    {
-      "team": "AUS",
-      "score": "0/0 (0.0/5)"
-    }
-  ],
+  "timestamp": "2025-09-20T06:01:47.119917Z",
+  "scoreboard": [],
   "markets": [
     {
-      "market": "1st Innings England (V) Delivery 4.3 Total Runs",
+      "market": "Match Result",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "Draw",
+          "odds": "2.62",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "2.87",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Total Goals Over / Under 1.00",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.33",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.95",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Total Goals Over / Under 1.25",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.65",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.07",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Total Goals Over / Under 1.50",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.93",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.75",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Total Goals Over / Under 1.75",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "2.25",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.55",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 2.75",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.27",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "3.65",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 3.00",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.36",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "3.05",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 3.25",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.67",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.14",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 3.50",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.98",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 3.75",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "2.4",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.55",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 4.00",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "3.2",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.33",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 4.25",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "3.65",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.27",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals Over / Under 4.50",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "4",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.23",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Draw No Bet",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.93",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.84",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Double Chance",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC or Draw",
+          "odds": "1.43",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC or J\u00fabilo Iwata",
+          "odds": "1.48",
+          "status": "active"
+        },
+        {
+          "bet": "Draw or J\u00fabilo Iwata",
+          "odds": "1.39",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Fujieda MYFC Goals Over / Under 1.25",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.33",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.95",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Fujieda MYFC Goals Over / Under 1.50",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.67",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.04",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Fujieda MYFC Goals Over / Under 1.75",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "2.04",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.67",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Fujieda MYFC Goals Over / Under 2.00",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "2.95",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.33",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "J\u00fabilo Iwata Goals Over / Under 1.25",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.3",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "3.1",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "J\u00fabilo Iwata Goals Over / Under 1.50",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.65",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.07",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "J\u00fabilo Iwata Goals Over / Under 1.75",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.99",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.7",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "J\u00fabilo Iwata Goals Over / Under 2.00",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "2.95",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.33",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Match Result",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "2.9",
+          "status": "active"
+        },
+        {
+          "bet": "Draw",
+          "odds": "2.6",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "2.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Handicap -1",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.42",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "8.25",
+          "status": "active"
+        },
+        {
+          "bet": "Handicap Tie",
+          "odds": "3.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Asian Handicap -0.25",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.55",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "2.25",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Double Chance and Over / Under 3.50",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC or Draw and Over",
+          "odds": "2.95",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC or J\u00fabilo Iwata and Over",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "Draw or J\u00fabilo Iwata and Over",
+          "odds": "2.9",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC or Draw and Under",
+          "odds": "2.6",
+          "status": "active"
+        },
+        {
+          "bet": "Draw or J\u00fabilo Iwata and Under",
+          "odds": "2.55",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC or J\u00fabilo Iwata and Under",
+          "odds": "2.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Draw No Bet",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.87",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Correct Score",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC 2-1",
+          "odds": "5",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 3-1",
+          "odds": "13",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 3-2",
+          "odds": "13",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 4-1",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 4-2",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 4-3",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 5-1",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 5-2",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 1-1",
+          "odds": "4.4",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 2-2",
+          "odds": "6",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 3-3",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 4-4",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 2-1",
+          "odds": "5",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 3-1",
+          "odds": "12",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 3-2",
+          "odds": "13",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 4-1",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 4-2",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 4-3",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 5-1",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 5-2",
+          "odds": "26",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Correct Score",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC 1-0",
+          "odds": "4.5",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 2-0",
+          "odds": "11",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 2-1",
+          "odds": "12",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 3-0",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 3-1",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 3-2",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 4-0",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC 4-1",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 0-0",
+          "odds": "4",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 1-1",
+          "odds": "5.5",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 2-2",
+          "odds": "23",
+          "status": "active"
+        },
+        {
+          "bet": "Draw 3-3",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 1-0",
+          "odds": "4.5",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 2-0",
+          "odds": "11",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 2-1",
+          "odds": "12",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 3-0",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 3-1",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 3-2",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 4-0",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata 4-1",
+          "odds": "26",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Exact Number of Goals",
       "bets": []
+    },
+    {
+      "market": "Second Half Exact Number of Goals",
+      "bets": [
+        {
+          "bet": "0",
+          "odds": "4",
+          "status": "active"
+        },
+        {
+          "bet": "1",
+          "odds": "2.55",
+          "status": "active"
+        },
+        {
+          "bet": "2",
+          "odds": "3.1",
+          "status": "active"
+        },
+        {
+          "bet": "3",
+          "odds": "5.5",
+          "status": "active"
+        },
+        {
+          "bet": "4",
+          "odds": "12",
+          "status": "active"
+        },
+        {
+          "bet": "5+",
+          "odds": "24",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Either Team To Win Yes/No",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "1.45",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "2.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Rest of Match Result",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "Draw",
+          "odds": "2.62",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "2.87",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Home Team No Bet",
+      "bets": [
+        {
+          "bet": "Draw",
+          "odds": "1.75",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.93",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Away Team No Bet",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.99",
+          "status": "active"
+        },
+        {
+          "bet": "Draw",
+          "odds": "1.7",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Odd Or Even Total",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "1.8",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "1.91",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Fujieda MYFC Odd Or Even Goals",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "2.25",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "1.55",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "J\u00fabilo Iwata Odd Or Even Goals",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "2.15",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "1.6",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Both Teams to Score in Both Halves",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "2.8",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "1.36",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Clean Sheet",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "2",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.98",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Match Result and Both Teams To Score",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC and Yes",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "Draw and Yes",
+          "odds": "2.62",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata and Yes",
+          "odds": "2.87",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Match Result and Total Goals Over / Under 3.50",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC and Over",
+          "odds": "6",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC and Under",
+          "odds": "5",
+          "status": "active"
+        },
+        {
+          "bet": "Draw and Over",
+          "odds": "5.5",
+          "status": "active"
+        },
+        {
+          "bet": "Draw and Under",
+          "odds": "4.5",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata and Over",
+          "odds": "5.5",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata and Under",
+          "odds": "5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Both Teams to Score and Total Goals Over / Under 3.50",
+      "bets": [
+        {
+          "bet": "Yes and Over",
+          "odds": "1.93",
+          "status": "active"
+        },
+        {
+          "bet": "Yes and Under",
+          "odds": "1.75",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Double Chance & Both Teams to Score",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC or Draw and Yes",
+          "odds": "1.43",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC or J\u00fabilo Iwata and Yes",
+          "odds": "1.48",
+          "status": "active"
+        },
+        {
+          "bet": "Draw or J\u00fabilo Iwata and Yes",
+          "odds": "1.39",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Goals (Bands)",
+      "bets": [
+        {
+          "bet": "2-3",
+          "odds": "1.8",
+          "status": "active"
+        },
+        {
+          "bet": "4-6",
+          "odds": "2",
+          "status": "active"
+        },
+        {
+          "bet": "7+",
+          "odds": "27",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Both Teams To Score 2 or More Goals",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "2.8",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "1.36",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "No Draw Both Teams To Score - Yes/No",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "1.48",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "2.62",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Second Half Double Chance",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC or Draw",
+          "odds": "1.35",
+          "status": "active"
+        },
+        {
+          "bet": "Fujieda MYFC or J\u00fabilo Iwata",
+          "odds": "1.42",
+          "status": "active"
+        },
+        {
+          "bet": "Draw or J\u00fabilo Iwata",
+          "odds": "1.35",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap -0.25",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.6",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "2.3",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap -0.50",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.43",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "2.87",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap -0.75",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.27",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "3.65",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap -1.00",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.1",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "6.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap +0.25",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "2.4",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.55",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap +0.50",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.39",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap +0.75",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "4",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.23",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Asian Handicap +1.00",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "6.5",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.1",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Handicap With Tie -1",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "1.43",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "8.5",
+          "status": "active"
+        },
+        {
+          "bet": "Handicap Tie",
+          "odds": "3.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Handicap With Tie +1",
+      "bets": [
+        {
+          "bet": "Fujieda MYFC",
+          "odds": "9",
+          "status": "active"
+        },
+        {
+          "bet": "J\u00fabilo Iwata",
+          "odds": "1.39",
+          "status": "active"
+        },
+        {
+          "bet": "Handicap Tie",
+          "odds": "3.9",
+          "status": "active"
+        }
+      ]
     }
   ]
 }

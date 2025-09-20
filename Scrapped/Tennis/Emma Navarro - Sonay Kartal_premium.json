@@ -1,0 +1,869 @@
+{
+  "timestamp": "2025-09-20T10:33:23.123981Z",
+  "scoreboard": [],
+  "markets": [
+    {
+      "market": "Match Result",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "2.15",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "1.7",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Winner (Set 2)",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "1.55",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "2.45",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Winner (Set 3)",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "1.35",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "3.2",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Sets Over / Under 2.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.55",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.45",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Games Over / Under 25.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.6",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.35",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Games Over / Under 26.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.75",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.05",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Games Over / Under 27.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "2",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Game Winner (Set 2, Game 8)",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "6",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "1.13",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Game Winner (Set 2, Game 9)",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "1.45",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "2.75",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Game Score (Set 2, Game 8)",
+      "bets": [
+        {
+          "bet": "Navarro, E to 30",
+          "odds": "15",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E to 40",
+          "odds": "9",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 0",
+          "odds": "2.87",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 15",
+          "odds": "3.25",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 30",
+          "odds": "4.5",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 40",
+          "odds": "7",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Game Score (Set 2, Game 9)",
+      "bets": [
+        {
+          "bet": "Navarro, E to 0",
+          "odds": "7.5",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E to 15",
+          "odds": "4.5",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E to 30",
+          "odds": "4.5",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E to 40",
+          "odds": "4.5",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 0",
+          "odds": "19",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 15",
+          "odds": "10",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 30",
+          "odds": "7.5",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S to 40",
+          "odds": "7.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Handicap -1.5",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "1.55",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "2.45",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Game Handicap (Set 2) +1.5",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "1.95",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "1.85",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Game Handicap (Set 3) +2.5",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "2.05",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "1.75",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Handicap Games -1.5",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "2.15",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "1.7",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Handicap Games -2.5",
+      "bets": [
+        {
+          "bet": "Navarro, E",
+          "odds": "2",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S",
+          "odds": "1.8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Handicap Games -3.5",
+      "bets": []
+    },
+    {
+      "market": "Next Game Total Points Over/Under 5.5 (Set 2, Game 9)",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.65",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.25",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Will Game Go To Deuce? (Set 2, Game 8)",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "4.2",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "1.22",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Will Game Go To Deuce? (Set 2, Game 9)",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "3.2",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "1.35",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Betting",
+      "bets": [
+        {
+          "bet": "Navarro, E 2-1",
+          "odds": "2.1",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 2-0",
+          "odds": "2.4",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 2-1",
+          "odds": "4.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 2) 10.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.95",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.85",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 2) 12.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "3.5",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.3",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 2) 9.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.08",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 3) 10.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "4.2",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.22",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 3) 12.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "7.5",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.09",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 3) 7.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.19",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "4.75",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 3) 8.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.5",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.55",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Total Games Over / Under (Set 3) 9.5",
+      "bets": []
+    },
+    {
+      "market": "Set Correct Score (Set 2)",
+      "bets": [
+        {
+          "bet": "Navarro, E 6-3",
+          "odds": "7.5",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 6-4",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 7-5",
+          "odds": "5.5",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 7-6",
+          "odds": "5.5",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 6-4",
+          "odds": "4.33",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 7-5",
+          "odds": "7.5",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 7-6",
+          "odds": "6",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Set Correct Score (Set 3)",
+      "bets": [
+        {
+          "bet": "Navarro, E 6-0",
+          "odds": "15",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 6-1",
+          "odds": "7",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 6-2",
+          "odds": "5.5",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 6-3",
+          "odds": "5",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 6-4",
+          "odds": "6",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 7-5",
+          "odds": "11",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E 7-6",
+          "odds": "11",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 6-0",
+          "odds": "26",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 6-1",
+          "odds": "23",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 6-2",
+          "odds": "15",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 6-3",
+          "odds": "12",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 6-4",
+          "odds": "9",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 7-5",
+          "odds": "17",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S 7-6",
+          "odds": "15",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Points Odd or Even (Set 2, Game 8)",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "1.3",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "3.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Total Points Odd or Even (Set 2, Game 9)",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "1.3",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "3.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Next Game Total Points Odd or Even (Game 18)",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "1.3",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "3.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Numbered Set Total Games Odd or Even (Set 2)",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "1.45",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "2.75",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Numbered Set Total Games Odd or Even (Set 3)",
+      "bets": [
+        {
+          "bet": "Even",
+          "odds": "1.75",
+          "status": "active"
+        },
+        {
+          "bet": "Odd",
+          "odds": "2.05",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Will Set Go To Tie Break? (Set 2)",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "3.5",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "1.3",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Will Set Go To Tie Break? (Set 3)",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "7.5",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "1.09",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Current Set Winner and Total Set Games (Set 2, 10.5 Games)",
+      "bets": [
+        {
+          "bet": "Navarro, E And Over",
+          "odds": "",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E And Under",
+          "odds": "",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Over",
+          "odds": "",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Under",
+          "odds": "",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Next Set Winner and Total Set Games (Set 3, 8.5 Games)",
+      "bets": [
+        {
+          "bet": "Navarro, E And Over",
+          "odds": "2.2",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E And Under",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Over",
+          "odds": "4",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Under",
+          "odds": "10",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Numbered Set Winner and Total Set Games (Set 2, 10.5 Games)",
+      "bets": [
+        {
+          "bet": "Navarro, E And Over",
+          "odds": "3.25",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E And Under",
+          "odds": "2.6",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Over",
+          "odds": "4",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Under",
+          "odds": "5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Numbered Set Winner and Total Set Games (Set 3, 8.5 Games)",
+      "bets": [
+        {
+          "bet": "Navarro, E And Over",
+          "odds": "2.2",
+          "status": "active"
+        },
+        {
+          "bet": "Navarro, E And Under",
+          "odds": "3",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Over",
+          "odds": "4",
+          "status": "active"
+        },
+        {
+          "bet": "Kartal, S And Under",
+          "odds": "10",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Navarro, E Set Total Games Over / Under (Set 2) 6.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "3.2",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.35",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Navarro, E Set Total Games Over / Under (Set 3) 5.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.3",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "3.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Kartal, S Set Total Games Over / Under (Set 2) 5.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.85",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "1.95",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Kartal, S Set Total Games Over / Under (Set 3) 3.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.75",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.05",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Navarro, E To Win A Set",
+      "bets": [
+        {
+          "bet": "Yes",
+          "odds": "1.55",
+          "status": "active"
+        },
+        {
+          "bet": "No",
+          "odds": "2.45",
+          "status": "active"
+        }
+      ]
+    }
+  ]
+}
