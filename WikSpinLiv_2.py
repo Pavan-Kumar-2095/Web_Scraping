@@ -1,24 +1,15 @@
 import json
 import time
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
-def scrape_wickspin_live(main_url=None, output_file=None, update_interval=0.2, headless=True, run_forever=True):
-    main_url = main_url or "https://www.wickspin24.live/#/full-market/4-34741059?marketId=1.247870489"
-    output_file = output_file or "WikSpinLiv_2.json"
+def scrape_wickspin_live(main_url, output_file, update_interval=0.2, headless=True, run_forever=True, driver=None):
+    if driver is None:
+        raise ValueError("A Selenium WebDriver instance must be provided via the 'driver' argument.")
 
-    options = Options()
-    options.add_argument("--start-maximized")
-    options.add_argument("--headless")  # Faster scraping
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-
-    driver = webdriver.Chrome(options=options)
-    wait = WebDriverWait(driver, 2)  # Reduced wait time for faster scraping
+    wait = WebDriverWait(driver, 2)
 
     def get_text_when_nonempty(parent, tag_name, timeout=1):
         try:
@@ -159,21 +150,8 @@ def scrape_wickspin_live(main_url=None, output_file=None, update_interval=0.2, h
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
 
-    try:
-        driver.get(main_url)  # Load the page once at the start
+    driver.get(main_url)  # Load once per scrape call
 
-        while True:
-            scraped_data = scrape_market_data()
-            save_data_to_json(scraped_data, output_file)
-            print(f"[✓] Data updated and saved to '{output_file}'")
-            if not run_forever:
-                break
-            time.sleep(update_interval)  # Small delay for rapid updates
-    except KeyboardInterrupt:
-        print("\n[!] Keyboard interrupt received. Exiting...")
-    finally:
-        driver.quit()
-
-if __name__ == "__main__":
-    scrape_wickspin_live()
-
+    data = scrape_market_data()
+    save_data_to_json(data, output_file)
+    print(f"[✓] Data updated and saved to '{output_file}'")

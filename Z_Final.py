@@ -134,148 +134,260 @@
 
 
 
+# import threading
+# import time
+# import json
+# from datetime import datetime
+# from pathlib import Path
+
+# # Import scraping functions
+# from WikSpinLiv_1 import scrape_data
+# from WikSpinLiv_2 import scrape_wickspin_live
+# from WikSpinLiv_2_Premium import scrape_premium_data
+
+
+# # ========== Part 1: Periodic scraping of sports list ==========
+# def periodic_sports_scrape(interval_minutes=5):
+#     while True:
+#         print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting scrape_data()...")
+#         try:
+#             scrape_data()
+#         except Exception as e:
+#             print(f"[{datetime.now().strftime('%H:%M:%S')}] Error in scrape_data: {e}")
+#         print(f"[{datetime.now().strftime('%H:%M:%S')}] Finished scrape_data(), sleeping {interval_minutes} minutes...\n")
+#         time.sleep(interval_minutes * 60)
+
+
+# # ========== Part 2: Load matches from JSON ==========
+# def load_matches_from_json(file_path):
+#     try:
+#         with open(file_path, 'r', encoding='utf-8') as f:
+#             return json.load(f)
+#     except Exception as e:
+#         print(f"[{datetime.now().strftime('%H:%M:%S')}] Failed to load JSON: {e}")
+#         return []
+
+
+# # ========== Utility ==========
+# def sanitize_filename(name):
+#     return "".join(c for c in name if c.isalnum() or c in (" ", "-", "_")).rstrip()
+
+
+# # ========== Process a single match persistently ==========
+# def process_match(sport, match, base_output_dir, stop_event):
+#     match_name = sanitize_filename(match.get("match", "unknown_match"))
+#     url = match.get("url")
+
+#     sport_dir = Path(base_output_dir) / sanitize_filename(sport)
+#     sport_dir.mkdir(parents=True, exist_ok=True)
+
+#     premium_output = sport_dir / f"{match_name}_premium.json"
+#     wickspin_output = sport_dir / f"{match_name}_wickspin.json"
+
+#     print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔍 Starting persistent processing: {match_name} | Sport: {sport}")
+
+#     while not stop_event.is_set():
+#         try:
+#             scrape_premium_data(
+#                 loop_interval=0.5,
+#                 main_url=url,
+#                 output_file=str(premium_output),
+#                 run_forever=False
+#             )
+
+#             scrape_wickspin_live(
+#                 main_url=url,
+#                 output_file=str(wickspin_output),
+#                 update_interval=0.2,
+#                 headless=True,
+#                 run_forever=False
+#             )
+
+#             print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Cycle completed: {match_name}")
+#         except Exception as e:
+#             print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error: {match_name} | {e}")
+
+#         # Wait some time before next cycle, but check stop_event periodically
+#         for _ in range(20):  # 20 * 0.5 = 10 seconds total wait
+#             if stop_event.is_set():
+#                 break
+#             time.sleep(0.5)
+
+#     print(f"[{datetime.now().strftime('%H:%M:%S')}] Stopped processing: {match_name}")
+
+
+# # ========== Run scrapers for all matches persistently with reload ==========
+# def run_scrapers(json_file, base_output_dir="Scrapped", interval_minutes=5):
+#     match_threads = {}
+#     stop_events = {}
+
+#     while True:
+#         data = load_matches_from_json(json_file)
+#         if not data:
+#             print(f"[{datetime.now().strftime('%H:%M:%S')}] No data found, retrying soon...")
+#             time.sleep(10)
+#             continue
+
+#         # Stop all existing threads cleanly before starting new ones
+#         print(f"[{datetime.now().strftime('%H:%M:%S')}] Stopping all existing match threads...")
+#         for event in stop_events.values():
+#             event.set()
+#         for thread in match_threads.values():
+#             thread.join()
+
+#         match_threads.clear()
+#         stop_events.clear()
+
+#         # Start new threads for current matches
+#         for sport_entry in data:
+#             sport = sport_entry.get("sport", "Unknown")
+#             matches = sport_entry.get("matches", [])
+
+#             for match in matches:
+#                 match_name = sanitize_filename(match.get("match", "unknown_match"))
+#                 stop_event = threading.Event()
+#                 thread = threading.Thread(
+#                     target=process_match,
+#                     args=(sport, match, base_output_dir, stop_event),
+#                     daemon=True
+#                 )
+#                 thread.start()
+#                 match_threads[match_name] = thread
+#                 stop_events[match_name] = stop_event
+
+#         print(f"[{datetime.now().strftime('%H:%M:%S')}] All match threads started. Sleeping for {interval_minutes} minutes...\n")
+#         time.sleep(interval_minutes * 60)
+
+
+# # ========== Main: run both loops concurrently ==========
+# if __name__ == "__main__":
+#     json_file = "WikSpinLiv_1.json"
+
+#     # Create threads
+#     thread_scrape_list = threading.Thread(target=periodic_sports_scrape, args=(5,), daemon=True)
+#     thread_process_matches = threading.Thread(target=run_scrapers, args=(json_file,), daemon=True)
+
+#     # Start threads
+#     thread_scrape_list.start()
+#     thread_process_matches.start()
+
+#     print(f"[{datetime.now().strftime('%H:%M:%S')}] Both scraping threads started. Press Ctrl+C to stop.")
+
+#     # Keep main thread alive
+#     try:
+#         while True:
+#             time.sleep(1)
+#     except KeyboardInterrupt:
+#         print("\nReceived exit signal. Exiting...")
+
+# main.py
+
 import threading
 import time
 import json
 from datetime import datetime
 from pathlib import Path
 
-# Import scraping functions
-from WikSpinLiv_1 import scrape_data
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
 from WikSpinLiv_2 import scrape_wickspin_live
 from WikSpinLiv_2_Premium import scrape_premium_data
 
-
-# ========== Part 1: Periodic scraping of sports list ==========
-def periodic_sports_scrape(interval_minutes=5):
-    while True:
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting scrape_data()...")
-        try:
-            scrape_data()
-        except Exception as e:
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] Error in scrape_data: {e}")
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Finished scrape_data(), sleeping {interval_minutes} minutes...\n")
-        time.sleep(interval_minutes * 60)
-
-
-# ========== Part 2: Load matches from JSON ==========
 def load_matches_from_json(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Failed to load JSON: {e}")
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Failed to load JSON: {e}")
         return []
 
-
-# ========== Utility ==========
 def sanitize_filename(name):
     return "".join(c for c in name if c.isalnum() or c in (" ", "-", "_")).rstrip()
 
+def create_driver():
+    options = Options()
+    options.add_argument('--headless=new')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-software-rasterizer')
+    options.add_argument('--disable-webgl')
+    options.add_argument('--enable-unsafe-swiftshader')
+    options.add_argument('--window-size=1920,1080')
+    options.add_argument('--log-level=3')
+    return webdriver.Chrome(options=options)
 
-# ========== Process a single match persistently ==========
-def process_match(sport, match, base_output_dir, stop_event):
+def process_match_forever(sport, match):
     match_name = sanitize_filename(match.get("match", "unknown_match"))
     url = match.get("url")
-
-    sport_dir = Path(base_output_dir) / sanitize_filename(sport)
+    fancy_bet = match.get("fancy_bet", False)
+    sport_dir = Path("Scrapped") / sanitize_filename(sport)
     sport_dir.mkdir(parents=True, exist_ok=True)
 
     premium_output = sport_dir / f"{match_name}_premium.json"
     wickspin_output = sport_dir / f"{match_name}_wickspin.json"
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔍 Starting persistent processing: {match_name} | Sport: {sport}")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 Starting continuous scrape for: {match_name} | Sport: {sport} | Fancy Bet: {fancy_bet}")
 
-    while not stop_event.is_set():
-        try:
-            scrape_premium_data(
-                loop_interval=0.5,
-                main_url=url,
-                output_file=str(premium_output),
-                run_forever=False
-            )
+    driver = create_driver()
 
-            scrape_wickspin_live(
-                main_url=url,
-                output_file=str(wickspin_output),
-                update_interval=0.2,
-                headless=True,
-                run_forever=False
-            )
+    try:
+        while True:
+            try:
+                if fancy_bet:
+                    scrape_wickspin_live(
+                        main_url=url,
+                        output_file=str(wickspin_output),
+                        update_interval=0.2,
+                        headless=True,
+                        run_forever=False,
+                        driver=driver
+                    )
+                    print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Wickspin scrape cycle complete: {match_name}")
+                else:
+                    scrape_premium_data(
+                        loop_interval=0.5,
+                        main_url=url,
+                        output_file=str(premium_output),
+                        run_forever=False,
+                        driver=driver
+                    )
+                    print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Premium scrape cycle complete: {match_name}")
+            except Exception as e:
+                print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error scraping {match_name}: {e}")
 
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Cycle completed: {match_name}")
-        except Exception as e:
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error: {match_name} | {e}")
+            time.sleep(2)
+    finally:
+        driver.quit()
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] 🛑 Driver quit for match: {match_name}")
 
-        # Wait some time before next cycle, but check stop_event periodically
-        for _ in range(20):  # 20 * 0.5 = 10 seconds total wait
-            if stop_event.is_set():
-                break
-            time.sleep(0.5)
-
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Stopped processing: {match_name}")
-
-
-# ========== Run scrapers for all matches persistently with reload ==========
-def run_scrapers(json_file, base_output_dir="Scrapped", interval_minutes=5):
-    match_threads = {}
-    stop_events = {}
-
-    while True:
-        data = load_matches_from_json(json_file)
-        if not data:
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] No data found, retrying soon...")
-            time.sleep(10)
-            continue
-
-        # Stop all existing threads cleanly before starting new ones
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Stopping all existing match threads...")
-        for event in stop_events.values():
-            event.set()
-        for thread in match_threads.values():
-            thread.join()
-
-        match_threads.clear()
-        stop_events.clear()
-
-        # Start new threads for current matches
-        for sport_entry in data:
-            sport = sport_entry.get("sport", "Unknown")
-            matches = sport_entry.get("matches", [])
-
-            for match in matches:
-                match_name = sanitize_filename(match.get("match", "unknown_match"))
-                stop_event = threading.Event()
-                thread = threading.Thread(
-                    target=process_match,
-                    args=(sport, match, base_output_dir, stop_event),
-                    daemon=True
-                )
-                thread.start()
-                match_threads[match_name] = thread
-                stop_events[match_name] = stop_event
-
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] All match threads started. Sleeping for {interval_minutes} minutes...\n")
-        time.sleep(interval_minutes * 60)
-
-
-# ========== Main: run both loops concurrently ==========
 if __name__ == "__main__":
     json_file = "WikSpinLiv_1.json"
+    data = load_matches_from_json(json_file)
 
-    # Create threads
-    thread_scrape_list = threading.Thread(target=periodic_sports_scrape, args=(5,), daemon=True)
-    thread_process_matches = threading.Thread(target=run_scrapers, args=(json_file,), daemon=True)
+    if not data:
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] ⚠️ No data found in {json_file}")
+        exit()
 
-    # Start threads
-    thread_scrape_list.start()
-    thread_process_matches.start()
+    threads = []
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Both scraping threads started. Press Ctrl+C to stop.")
+    for sport_entry in data:
+        sport = sport_entry.get("sport", "Unknown")
+        matches = sport_entry.get("matches", [])
+        for match in matches:
+            thread = threading.Thread(
+                target=process_match_forever,
+                args=(sport, match),
+                daemon=True
+            )
+            thread.start()
+            threads.append(thread)
 
-    # Keep main thread alive
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ All match threads started. Scraping continuously...")
+
     try:
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
-        print("\nReceived exit signal. Exiting...")
+        print("\n🛑 Exiting... All threads will stop automatically.")

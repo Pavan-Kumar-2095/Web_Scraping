@@ -3,32 +3,16 @@
         "sport": "Cricket",
         "matches": [
             {
-                "match": "India W - Australia W",
-                "url": "https://www.wickspin24.live/#/full-market/4-34744529?marketId=1.247921946",
-                "fancy_bet": true,
-                "sportsbook": true
-            }
-        ]
-    },
-    {
-        "sport": "Soccer",
-        "matches": [
-            {
-                "match": "Cerezo Osaka - Kashiwa",
-                "url": "https://www.wickspin24.live/#/full-market/1-34730264?marketId=1.247723178",
+                "match": "Sambalpur Warriors - Cuttack Panthers",
+                "url": "https://www.wickspin24.live/#/full-market/4-34758215?marketId=1.248065423",
                 "fancy_bet": false,
                 "sportsbook": true
-            }
-        ]
-    },
-    {
-        "sport": "Tennis",
-        "matches": [
+            },
             {
-                "match": "Emma Navarro - Sonay Kartal",
-                "url": "https://www.wickspin24.live/#/full-market/2-34754777?marketId=1.247999370",
+                "match": "Hyderabad (V) - Kolkata (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--50826?marketId=-51181",
                 "fancy_bet": false,
-                "sportsbook": true
+                "sportsbook": false
             }
         ]
     }
