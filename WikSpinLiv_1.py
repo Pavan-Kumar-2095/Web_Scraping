@@ -82,7 +82,7 @@ def scrape_data():
                     print(f"  Match: {match_name}")
 
                     fancy_bet = bool(match.find_elements(By.CSS_SELECTOR, ".icon-fancybet"))
-                    sportsbook = bool(match.find_elements(By.CSS_SELECTOR, ".icon-sportsbook"))
+                    # sportsbook = bool(match.find_elements(By.CSS_SELECTOR, ".icon-sportsbook"))
 
                     # Try to click inner clickable element for better success
                     try:
@@ -102,8 +102,7 @@ def scrape_data():
                     sport_data["matches"].append({
                         "match": match_name,
                         "url": current_url,
-                        "fancy_bet": fancy_bet,
-                        "sportsbook": sportsbook
+                        "fancy_bet": fancy_bet
                     })
 
                     driver.back()

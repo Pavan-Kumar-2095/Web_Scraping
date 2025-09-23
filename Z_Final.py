@@ -1,9 +1,9 @@
-
 import threading
 import time
 import json
 from datetime import datetime
 from pathlib import Path
+import orjson
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -14,14 +14,14 @@ from WikSpinLiv_1 import scrape_data  # Update this to your actual module if nee
 
 
 # Load match data from JSON file
+# Load match data from JSON file using orjson
 def load_matches_from_json(file_path):
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
+        with open(file_path, 'rb') as f:  # orjson requires binary mode
+            return orjson.loads(f.read())
     except Exception as e:
         print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Failed to load JSON: {e}")
         return []
-
 
 # Clean filenames
 def sanitize_filename(name):
@@ -65,25 +65,24 @@ def process_match_forever(sport, match):
                     scrape_wickspin_live(
                         main_url=url,
                         output_file=str(wickspin_output),
-                        update_interval=0.2,
+                        update_interval=0.0,
                         headless=True,
                         run_forever=False,
                         driver=driver
                     )
                     print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Wickspin scrape cycle complete: {match_name}")
-                else:
-                    scrape_premium_data(
-                        loop_interval=0.5,
-                        main_url=url,
-                        output_file=str(premium_output),
-                        run_forever=False,
-                        driver=driver
-                    )
-                    print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Premium scrape cycle complete: {match_name}")
+                # else:
+                #     scrape_premium_data(
+                #         loop_interval=0.5,
+                #         main_url=url,
+                #         output_file=str(premium_output),
+                #         run_forever=False,
+                #         driver=driver
+                #     )
+                #     print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Premium scrape cycle complete: {match_name}")
             except Exception as e:
                 print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error scraping {match_name}: {e}")
 
-            time.sleep(2)
     finally:
         driver.quit()
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 🛑 Driver quit for match: {match_name}")
