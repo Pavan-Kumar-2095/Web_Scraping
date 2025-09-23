@@ -3,16 +3,146 @@
         "sport": "Cricket",
         "matches": [
             {
-                "match": "Sambalpur Warriors - Cuttack Panthers",
-                "url": "https://www.wickspin24.live/#/full-market/4-34758215?marketId=1.248065423",
+                "match": "India A - Australia A",
+                "url": "https://www.wickspin24.live/#/full-market/4--50968?marketId=-51323",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Delhi (V) - Punjab (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--50974?marketId=-51329",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Delhi (V) - Mumbai (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--50978?marketId=-51333",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "KKR Legends (V) - DC Legends (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--50988?marketId=-51343",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Rajasthan (V) - Punjab (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--50990?marketId=-51345",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Pakistan (V) - Australia (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--50992?marketId=-51347",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
                 "match": "Hyderabad (V) - Kolkata (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--50826?marketId=-51181",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--50995?marketId=-51350",
                 "fancy_bet": false,
-                "sportsbook": false
+                "sportsbook": true
+            }
+        ]
+    },
+    {
+        "sport": "Soccer",
+        "matches": [
+            {
+                "match": "Albirex Niigata - Nagoya",
+                "url": "https://www.wickspin24.live/#/full-market/1-34754934?marketId=1.248001729",
+                "fancy_bet": false,
+                "sportsbook": true
+            }
+        ]
+    },
+    {
+        "sport": "Tennis",
+        "matches": [
+            {
+                "match": "Co Wong - Cazaux",
+                "url": "https://www.wickspin24.live/#/full-market/2-34763404?marketId=1.248112278",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Fucsovics - Arnaldi",
+                "url": "https://www.wickspin24.live/#/full-market/2-34762725?marketId=1.248095695",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Schoolkate - J De Jong",
+                "url": "https://www.wickspin24.live/#/full-market/2-34763434?marketId=1.248112383",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Al Eala - Falei",
+                "url": "https://www.wickspin24.live/#/full-market/2-34758451?marketId=1.248038215",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "El Cocciaretto - Pris Hon",
+                "url": "https://www.wickspin24.live/#/full-market/2-34762961?marketId=1.248099831",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "A Bondar - D Parry",
+                "url": "https://www.wickspin24.live/#/full-market/2-34763131?marketId=1.248108149",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Thandi - An Kulikova",
+                "url": "https://www.wickspin24.live/#/full-market/2-34758501?marketId=1.248038618",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "V Tomova - Tjen",
+                "url": "https://www.wickspin24.live/#/full-market/2-34762389?marketId=1.248090529",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Uchijima - J Garland",
+                "url": "https://www.wickspin24.live/#/full-market/2-34763092?marketId=1.248108104",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Draxl - Skatov",
+                "url": "https://www.wickspin24.live/#/full-market/2-34761330?marketId=1.248080831",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Mei Yamaguchi - H Cody Wong",
+                "url": "https://www.wickspin24.live/#/full-market/2-34758446?marketId=1.248038033",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Tomic - Ti Zhang",
+                "url": "https://www.wickspin24.live/#/full-market/2-34761315?marketId=1.248080740",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Hanfmann - Tr Boyer",
+                "url": "https://www.wickspin24.live/#/full-market/2-34761340?marketId=1.248080939",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Spizzirri - Zhukayev",
+                "url": "https://www.wickspin24.live/#/full-market/2-34761335?marketId=1.248080694",
+                "fancy_bet": false,
+                "sportsbook": true
             }
         ]
     }
