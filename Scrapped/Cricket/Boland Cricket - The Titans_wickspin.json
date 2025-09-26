@@ -1,0 +1,53 @@
+{
+  "exchange_odds": [],
+  "fancy_markets": [
+    {
+      "title": "100 Over Run BOL",
+      "status": "Suspend",
+      "no": {
+        "odds": null,
+        "value": null
+      },
+      "yes": {
+        "odds": null,
+        "value": null
+      }
+    },
+    {
+      "title": "Fall of 3rd Wkt BOL",
+      "status": "Suspend",
+      "no": {
+        "odds": null,
+        "value": null
+      },
+      "yes": {
+        "odds": null,
+        "value": null
+      }
+    },
+    {
+      "title": "Aviwe Mgijima Runs",
+      "status": "Suspend",
+      "no": {
+        "odds": null,
+        "value": null
+      },
+      "yes": {
+        "odds": null,
+        "value": null
+      }
+    },
+    {
+      "title": "Gavin Kaplan Runs",
+      "status": "Suspend",
+      "no": {
+        "odds": null,
+        "value": null
+      },
+      "yes": {
+        "odds": null,
+        "value": null
+      }
+    }
+  ]
+}

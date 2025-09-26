@@ -96,14 +96,14 @@ def periodic_scraper():
             scrape_data()
         except Exception as e:
             print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error in periodic scrape: {e}")
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] ⏱ Waiting 5 minutes...\n")
-        time.sleep(300)  # 5 minutes
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] ⏱ Waiting 15 minutes...\n")
+        time.sleep(900)  # 15 minutes
 
 
 # Thread to watch for new matches in the JSON file and start them
 def watch_for_new_matches(json_file, existing_matches_set, threads):
     while True:
-        time.sleep(300)  # Check every 5 minutes
+        time.sleep(1200)  # Check every 20 minutes
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 Checking for new matches...")
 
         new_data = load_matches_from_json(json_file)
@@ -141,25 +141,29 @@ if __name__ == "__main__":
     threads = []
     existing_matches_set = set()
 
+    # Start periodic scraper thread
+    periodic_thread = threading.Thread(target=periodic_scraper, daemon=True)
+    periodic_thread.start()
+    threads.append(periodic_thread)
+
+    time.sleep(200)
+
     # Start initial match threads
     for sport_entry in data:
         sport = sport_entry.get("sport", "Unknown")
         matches = sport_entry.get("matches", [])
         for match in matches:
-            match_id = f"{sport}|{match.get('match', '')}|{match.get('url', '')}"
-            thread = threading.Thread(
-                target=process_match_forever,
-                args=(sport, match),
-                daemon=True
-            )
-            thread.start()
-            threads.append(thread)
-            existing_matches_set.add(match_id)
+            if match.get("fancy_bet", False):
+                match_id = f"{sport}|{match.get('match', '')}|{match.get('url', '')}"
+                thread = threading.Thread(
+                    target=process_match_forever,
+                    args=(sport, match),
+                    daemon=True
+                )
+                thread.start()
+                threads.append(thread)
+                existing_matches_set.add(match_id)
 
-    # Start periodic scraper thread
-    periodic_thread = threading.Thread(target=periodic_scraper, daemon=True)
-    periodic_thread.start()
-    threads.append(periodic_thread)
 
     # Start watcher thread for new matches
     watcher_thread = threading.Thread(
