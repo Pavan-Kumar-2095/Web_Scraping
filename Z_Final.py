@@ -13,15 +13,20 @@ from WikSpinLiv_2_Premium import scrape_premium_data
 from WikSpinLiv_1 import scrape_data  # Update this to your actual module if needed
 
 
-# Load match data from JSON file
+# Helper for timestamps
+def now():
+    return datetime.now().strftime('%H:%M:%S')
+
+
 # Load match data from JSON file using orjson
 def load_matches_from_json(file_path):
     try:
         with open(file_path, 'rb') as f:  # orjson requires binary mode
             return orjson.loads(f.read())
     except Exception as e:
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Failed to load JSON: {e}")
+        print(f"[{now()}] ❌ Failed to load JSON: {e}")
         return []
+
 
 # Clean filenames
 def sanitize_filename(name):
@@ -54,7 +59,7 @@ def process_match_forever(sport, match):
     premium_output = sport_dir / f"{match_name}_premium.json"
     wickspin_output = sport_dir / f"{match_name}_wickspin.json"
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 Starting continuous scrape for: {match_name} | Sport: {sport} | Fancy Bet: {fancy_bet}")
+    print(f"[{now()}] 🔄 Starting continuous scrape for: {match_name} | Sport: {sport} | Fancy Bet: {fancy_bet}")
 
     driver = create_driver()
 
@@ -70,7 +75,7 @@ def process_match_forever(sport, match):
                         run_forever=False,
                         driver=driver
                     )
-                    print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Wickspin scrape cycle complete: {match_name}")
+                    print(f"[{now()}] ✅ Wickspin scrape cycle complete: {match_name}")
                 # else:
                 #     scrape_premium_data(
                 #         loop_interval=0.5,
@@ -79,108 +84,100 @@ def process_match_forever(sport, match):
                 #         run_forever=False,
                 #         driver=driver
                 #     )
-                #     print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Premium scrape cycle complete: {match_name}")
+                #     print(f"[{now()}] ✅ Premium scrape cycle complete: {match_name}")
             except Exception as e:
-                print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error scraping {match_name}: {e}")
-
+                print(f"[{now()}] ❌ Error scraping {match_name}: {e}")
+                # Restart driver if error
+                try:
+                    driver.quit()
+                except Exception:
+                    pass
+                driver = create_driver()
     finally:
-        driver.quit()
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] 🛑 Driver quit for match: {match_name}")
-
-
-# Thread to run scrape_data() every 5 minutes
-def periodic_scraper():
-    while True:
-        print(f"\n[{datetime.now().strftime('%H:%M:%S')}] ⏳ Starting periodic scrape...")
         try:
-            scrape_data()
-        except Exception as e:
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error in periodic scrape: {e}")
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] ⏱ Waiting 15 minutes...\n")
-        time.sleep(900)  # 15 minutes
+            driver.quit()
+        except Exception:
+            pass
+        print(f"[{now()}] 🛑 Driver quit for match: {match_name}")
 
 
-# Thread to watch for new matches in the JSON file and start them
-def watch_for_new_matches(json_file, existing_matches_set, threads):
+# Watcher thread to monitor the JSON file for new matches
+def watch_for_new_matches(json_file, existing_matches_set, check_interval=30):
+    print(f"[{now()}] 👀 Watcher started — monitoring for new matches every {check_interval}s.")
     while True:
-        time.sleep(1200)  # Check every 20 minutes
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 Checking for new matches...")
+        try:
+            data = load_matches_from_json(json_file)
+            if data:
+                for sport_entry in data:
+                    sport = sport_entry.get("sport", "Unknown")
+                    matches = sport_entry.get("matches", [])
+                    for match in matches:
+                        if match.get("fancy_bet", False):
+                            match_id = f"{sport}|{match.get('match', '')}|{match.get('url', '')}"
+                            if match_id not in existing_matches_set:
+                                print(f"[{now()}] ➕ New match detected: {match.get('match')} in {sport}. Starting scraper thread.")
+                                thread = threading.Thread(
+                                    target=process_match_forever,
+                                    args=(sport, match),
+                                    daemon=True
+                                )
+                                thread.start()
+                                threads.append(thread)
+                                existing_matches_set.add(match_id)
+            else:
+                print(f"[{now()}] ⚠️ Watcher found no matches in JSON.")
+        except Exception as e:
+            print(f"[{now()}] ❌ Watcher error: {e}")
 
-        new_data = load_matches_from_json(json_file)
-        if not new_data:
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] ⚠️ No data found in {json_file}")
-            continue
-
-        for sport_entry in new_data:
-            sport = sport_entry.get("sport", "Unknown")
-            matches = sport_entry.get("matches", [])
-
-            for match in matches:
-                match_id = f"{sport}|{match.get('match', '')}|{match.get('url', '')}"
-                if match_id not in existing_matches_set:
-                    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🆕 New match found! Starting thread for: {match.get('match')}")
-                    thread = threading.Thread(
-                        target=process_match_forever,
-                        args=(sport, match),
-                        daemon=True
-                    )
-                    thread.start()
-                    threads.append(thread)
-                    existing_matches_set.add(match_id)
+        time.sleep(check_interval)
 
 
-# Entry point
+# Main entry point
 if __name__ == "__main__":
-    json_file = "WikSpinLiv_1.json"
-    data = load_matches_from_json(json_file)
-
-    if not data:
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] ⚠️ No data found in {json_file}")
-        exit()
-
     threads = []
     existing_matches_set = set()
+    json_file = "WikSpinLiv_1.json"
 
-    # Start periodic scraper thread
-    periodic_thread = threading.Thread(target=periodic_scraper, daemon=True)
+    # 2. Start periodic scraper thread that loops every 15 minutes
+    def periodic_scraper_loop():
+        while True:
+            print(f"\n[{now()}] ⏳ Starting periodic scrape...")
+            try:
+                scrape_data()
+            except Exception as e:
+                print(f"[{now()}] ❌ Error in periodic scrape: {e}")
+            print(f"[{now()}] ⏱ periodic_scraper waiting 15 minutes...\n")
+            time.sleep(900)  # 15 minutes
+
+    periodic_thread = threading.Thread(target=periodic_scraper_loop, daemon=True)
     periodic_thread.start()
     threads.append(periodic_thread)
 
-    time.sleep(200)
-
-    # Start initial match threads
-    for sport_entry in data:
-        sport = sport_entry.get("sport", "Unknown")
-        matches = sport_entry.get("matches", [])
-        for match in matches:
-            if match.get("fancy_bet", False):
-                match_id = f"{sport}|{match.get('match', '')}|{match.get('url', '')}"
-                thread = threading.Thread(
-                    target=process_match_forever,
-                    args=(sport, match),
-                    daemon=True
-                )
-                thread.start()
-                threads.append(thread)
-                existing_matches_set.add(match_id)
-
-
-    # Start watcher thread for new matches
+    # 4. Start watcher thread to monitor for new matches
     watcher_thread = threading.Thread(
         target=watch_for_new_matches,
-        args=(json_file, existing_matches_set, threads),
+        args=(json_file, existing_matches_set),
         daemon=True
     )
     watcher_thread.start()
     threads.append(watcher_thread)
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ All threads started. Scraping continuously...")
+    print(f"[{now()}] ✅ All threads started. Waiting for matches...")
 
+    # Keep main thread alive
     try:
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
         print("\n🛑 Exiting... All threads will stop automatically.")
+
+    # Keep main thread alive
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("\n🛑 Exiting... All threads will stop automatically.")
+
 
 
 
