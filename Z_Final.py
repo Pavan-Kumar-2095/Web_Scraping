@@ -102,7 +102,7 @@ def process_match_forever(sport, match):
 
 
 # Watcher thread to monitor the JSON file for new matches
-def watch_for_new_matches(json_file, existing_matches_set, check_interval=30):
+def watch_for_new_matches(json_file, existing_matches_set, check_interval=30):  ## can make it 1000
     print(f"[{now()}] 👀 Watcher started — monitoring for new matches every {check_interval}s.")
     while True:
         try:
@@ -131,57 +131,62 @@ def watch_for_new_matches(json_file, existing_matches_set, check_interval=30):
 
         time.sleep(check_interval)
 
+initial_scrape_done = threading.Event()
 
-# Main entry point
+import threading
+import time
+from pathlib import Path
+
+initial_scrape_done = threading.Event()
+
 if __name__ == "__main__":
     threads = []
     existing_matches_set = set()
     json_file = "WikSpinLiv_1.json"
+    json_path = Path(json_file)
 
-    # 2. Start periodic scraper thread that loops every 15 minutes
     def periodic_scraper_loop():
+        first_run = True
         while True:
             print(f"\n[{now()}] ⏳ Starting periodic scrape...")
             try:
                 scrape_data()
+                print(f"[{now()}] ✅ Periodic scrape completed.")
+                if first_run:
+                    initial_scrape_done.set()
+                    first_run = False
             except Exception as e:
                 print(f"[{now()}] ❌ Error in periodic scrape: {e}")
-            print(f"[{now()}] ⏱ periodic_scraper waiting 15 minutes...\n")
-            time.sleep(900)  # 15 minutes
+            print(f"[{now()}] ⏱ periodic_scraper sleeping 15 minutes...\n")
+            time.sleep(900)
+
+    def delayed_watcher():
+        print(f"[{now()}] 💤 Watcher waiting for initial scrape to complete and JSON file to be ready...")
+        initial_scrape_done.wait()
+
+        # Wait for JSON file to exist and be non-empty before proceeding
+        while not (json_path.exists() and json_path.stat().st_size > 0):
+            print(f"[{now()}] ⚠️ JSON file not ready yet. Waiting 10 seconds...")
+            time.sleep(10)
+
+        print(f"[{now()}] 👀 Watcher started — monitoring for new matches every 30s.")
+        watch_for_new_matches(json_file, existing_matches_set)
 
     periodic_thread = threading.Thread(target=periodic_scraper_loop, daemon=True)
     periodic_thread.start()
     threads.append(periodic_thread)
 
-    # 4. Start watcher thread to monitor for new matches
-    watcher_thread = threading.Thread(
-        target=watch_for_new_matches,
-        args=(json_file, existing_matches_set),
-        daemon=True
-    )
+    watcher_thread = threading.Thread(target=delayed_watcher, daemon=True)
     watcher_thread.start()
     threads.append(watcher_thread)
 
     print(f"[{now()}] ✅ All threads started. Waiting for matches...")
 
-    # Keep main thread alive
     try:
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
         print("\n🛑 Exiting... All threads will stop automatically.")
-
-    # Keep main thread alive
-    try:
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        print("\n🛑 Exiting... All threads will stop automatically.")
-
-
-
-
-
 
 
 # import threading
