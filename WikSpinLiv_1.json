@@ -3,68 +3,13 @@
         "sport": "Cricket",
         "matches": [
             {
-                "match": "India - West Indies",
-                "url": "https://www.wickspin24.live/#/full-market/4-34790268?marketId=1.248431760",
-                "fancy_bet": true
-            },
-            {
-                "match": "New Zealand - Australia",
-                "url": "https://www.wickspin24.live/#/full-market/4-34796852?marketId=1.248517384",
-                "fancy_bet": true
-            },
-            {
-                "match": "Haridwar Spring Elmas - Tehri Titans",
-                "url": "https://www.wickspin24.live/#/full-market/4-34801073?marketId=1.248567594",
-                "fancy_bet": false
-            },
-            {
                 "match": "India A - Australia A",
                 "url": "https://www.wickspin24.live/#/full-market/4-34800716?marketId=1.248548233",
                 "fancy_bet": false
             },
             {
-                "match": "Vidarbha - Rest of India",
-                "url": "https://www.wickspin24.live/#/full-market/4-34778301?marketId=1.248491956",
-                "fancy_bet": false
-            },
-            {
-                "match": "Bengaluru (V) - Delhi (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--53677?marketId=-54032",
-                "fancy_bet": false
-            },
-            {
-                "match": "Warriorz Women (V) - Gujarat (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--53700?marketId=-54055",
-                "fancy_bet": false
-            },
-            {
-                "match": "Chennai (V) - Punjab (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--53717?marketId=-54072",
-                "fancy_bet": false
-            },
-            {
-                "match": "WI Legends (V) - Pak Legends (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--53719?marketId=-54074",
-                "fancy_bet": false
-            },
-            {
-                "match": "Khulna Division - Barishal Division",
-                "url": "https://www.wickspin24.live/#/full-market/4--53722?marketId=-54077",
-                "fancy_bet": false
-            },
-            {
-                "match": "Sri Lanka (V) - South Africa (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--53723?marketId=-54078",
-                "fancy_bet": false
-            },
-            {
-                "match": "Hyderabad (V) - Gujarat (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--53725?marketId=-54080",
-                "fancy_bet": false
-            },
-            {
-                "match": "Chennai (V) - Delhi (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--53726?marketId=-54081",
+                "match": "Gujranwala Titans - Rawalpindi Markhors",
+                "url": "https://www.wickspin24.live/#/full-market/4-34801535?marketId=1.248570064",
                 "fancy_bet": false
             },
             {
@@ -76,55 +21,80 @@
                 "match": "Western Province - Imperial Lions",
                 "url": "https://www.wickspin24.live/#/full-market/4--53436?marketId=-53791",
                 "fancy_bet": false
+            },
+            {
+                "match": "Delhi (V) - Mumbai (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--53754?marketId=-54109",
+                "fancy_bet": false
+            },
+            {
+                "match": "Ingabo Titans - Imena Centurions CC",
+                "url": "https://www.wickspin24.live/#/full-market/4--53776?marketId=-54131",
+                "fancy_bet": false
+            },
+            {
+                "match": "Chennai (V) - Mumbai (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--53777?marketId=-54132",
+                "fancy_bet": false
+            },
+            {
+                "match": "Bengaluru (V) - Mumbai (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--53782?marketId=-54137",
+                "fancy_bet": false
+            },
+            {
+                "match": "Gujarat (V) - Hyderabad (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--53786?marketId=-54141",
+                "fancy_bet": false
+            },
+            {
+                "match": "Australia (V) - India (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--53792?marketId=-54147",
+                "fancy_bet": false
+            },
+            {
+                "match": "Pak Legends (V) - Eng Legends (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--53793?marketId=-54148",
+                "fancy_bet": false
             }
         ]
     },
     {
-        "sport": "Tennis",
+        "sport": "Soccer",
         "matches": [
             {
-                "match": "Cerundolo - Mannarino",
-                "url": "https://www.wickspin24.live/#/full-market/2-34796943?marketId=1.248516994",
+                "match": "Kolos Kovalyovka - Rukh Vynnyky",
+                "url": "https://www.wickspin24.live/#/full-market/1-34787219?marketId=1.248382048",
                 "fancy_bet": false
             },
             {
-                "match": "Se Baez - Hol Rune",
-                "url": "https://www.wickspin24.live/#/full-market/2-34797516?marketId=1.248522475",
+                "match": "Lamphun Warrior - Muangthong Utd",
+                "url": "https://www.wickspin24.live/#/full-market/1-34785700?marketId=1.248363326",
                 "fancy_bet": false
             },
             {
-                "match": "Kartal - L Noskova",
-                "url": "https://www.wickspin24.live/#/full-market/2-34797182?marketId=1.248519685",
+                "match": "Araz Nakhchivan PFK - Imisli FK",
+                "url": "https://www.wickspin24.live/#/full-market/1-34800438?marketId=1.248541908",
                 "fancy_bet": false
             },
             {
-                "match": "Humbert - Thompson",
-                "url": "https://www.wickspin24.live/#/full-market/2-34796845?marketId=1.248515317",
+                "match": "Mbarara City FC - UPDF FC",
+                "url": "https://www.wickspin24.live/#/full-market/1-34802855?marketId=1.248571242",
                 "fancy_bet": false
             },
             {
-                "match": "Costoulas - Lin Klimovicova",
-                "url": "https://www.wickspin24.live/#/full-market/2-34801345?marketId=1.248558125",
+                "match": "Buhimba Saints United - Calvary FC",
+                "url": "https://www.wickspin24.live/#/full-market/1-34798132?marketId=1.248527127",
                 "fancy_bet": false
             },
             {
-                "match": "Le Tien - Kecmanovic",
-                "url": "https://www.wickspin24.live/#/full-market/2-34793134?marketId=1.248476694",
+                "match": "Opatija - NK Dugopolje",
+                "url": "https://www.wickspin24.live/#/full-market/1-34793890?marketId=1.248485122",
                 "fancy_bet": false
             },
             {
-                "match": "Hesse - Dar Vidmanova",
-                "url": "https://www.wickspin24.live/#/full-market/2-34801319?marketId=1.248557246",
-                "fancy_bet": false
-            },
-            {
-                "match": "Ma Bellucci - Machac",
-                "url": "https://www.wickspin24.live/#/full-market/2-34796434?marketId=1.248508518",
-                "fancy_bet": false
-            },
-            {
-                "match": "Lu Nardi - Mpetshi Perricard",
-                "url": "https://www.wickspin24.live/#/full-market/2-34796494?marketId=1.248509791",
+                "match": "Slovan Ljublana - Dravinja Kostroj",
+                "url": "https://www.wickspin24.live/#/full-market/1-34797902?marketId=1.248525414",
                 "fancy_bet": false
             }
         ]

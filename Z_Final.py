@@ -102,9 +102,9 @@ def process_match_forever(sport, match):
 
 
 # Watcher thread to monitor the JSON file for new matches
-def watch_for_new_matches(json_file, existing_matches_set, check_interval=30):  ## can make it 1000
-    print(f"[{now()}] 👀 Watcher started — monitoring for new matches every {check_interval}s.")
+def watch_for_new_matches(json_file, existing_matches_set, check_interval=60):  ## can make it 1000
     while True:
+        print(f"[{now()}] 👀 Watcher started — monitoring for new matches every {check_interval}s.")
         try:
             data = load_matches_from_json(json_file)
             if data:
@@ -124,6 +124,9 @@ def watch_for_new_matches(json_file, existing_matches_set, check_interval=30):  
                                 thread.start()
                                 threads.append(thread)
                                 existing_matches_set.add(match_id)
+                            else:
+                                print(" ?? No New Matches Found ")
+                            
             else:
                 print(f"[{now()}] ⚠️ Watcher found no matches in JSON.")
         except Exception as e:
@@ -148,7 +151,8 @@ if __name__ == "__main__":
     def periodic_scraper_loop():
         first_run = True
         while True:
-            print(f"\n[{now()}] ⏳ Starting periodic scrape...")
+            print(f"\n[{now()}] 🫀 Heartbeat: periodic_scraper_loop is alive")
+            print(f"[{now()}] ⏳ Starting periodic scrape...")
             try:
                 scrape_data()
                 print(f"[{now()}] ✅ Periodic scrape completed.")
@@ -157,8 +161,10 @@ if __name__ == "__main__":
                     first_run = False
             except Exception as e:
                 print(f"[{now()}] ❌ Error in periodic scrape: {e}")
-            print(f"[{now()}] ⏱ periodic_scraper sleeping 15 minutes...\n")
-            time.sleep(900)
+        
+            print(f"[{now()}] ⏱ periodic_scraper sleeping 2 minutes...\n")
+            time.sleep(120)
+
 
     def delayed_watcher():
         print(f"[{now()}] 💤 Watcher waiting for initial scrape to complete and JSON file to be ready...")
@@ -168,8 +174,6 @@ if __name__ == "__main__":
         while not (json_path.exists() and json_path.stat().st_size > 0):
             print(f"[{now()}] ⚠️ JSON file not ready yet. Waiting 10 seconds...")
             time.sleep(10)
-
-        print(f"[{now()}] 👀 Watcher started — monitoring for new matches every 30s.")
         watch_for_new_matches(json_file, existing_matches_set)
 
     periodic_thread = threading.Thread(target=periodic_scraper_loop, daemon=True)
