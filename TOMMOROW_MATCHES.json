@@ -1,0 +1,246 @@
+[
+    {
+        "sport": "Cricket",
+        "matches": [
+            {
+                "match": "England W - Bangladesh W",
+                "url": "https://www.wickspin24.live/#/full-market/4-34804942?marketId=1.248592714",
+                "fancy_bet": true,
+                "sportsbook": true
+            },
+            {
+                "match": "Queensland Bulls - Tasmania Tigers",
+                "url": "https://www.wickspin24.live/#/full-market/4-34758555?marketId=1.248460244",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Western Australia - New South Wales Blues",
+                "url": "https://www.wickspin24.live/#/full-market/4-34758556?marketId=1.248460245",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Atlanta Kings CC - New York Lions CC",
+                "url": "https://www.wickspin24.live/#/full-market/4-34811657?marketId=1.248664879",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "La Waves CC - Dallas Lonestars CC",
+                "url": "https://www.wickspin24.live/#/full-market/4-34815592?marketId=1.248707414",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Malaysia W - Nepal W",
+                "url": "https://www.wickspin24.live/#/full-market/4-34816663?marketId=1.248726543",
+                "fancy_bet": false,
+                "sportsbook": false
+            }
+        ]
+    },
+    {
+        "sport": "Soccer",
+        "matches": [
+            {
+                "match": "Leonesa - Albacete",
+                "url": "https://www.wickspin24.live/#/full-market/1-34789630?marketId=1.248420532",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Harrogate Town - Crewe",
+                "url": "https://www.wickspin24.live/#/full-market/1-34788863?marketId=1.248406324",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Deportivo Riestra - Velez Sarsfield",
+                "url": "https://www.wickspin24.live/#/full-market/1-34776017?marketId=1.248263614",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Racing Club - Independiente Rivadavia",
+                "url": "https://www.wickspin24.live/#/full-market/1-34789255?marketId=1.248419919",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Tigres FC Zipaquira - Boyaca Patriotas",
+                "url": "https://www.wickspin24.live/#/full-market/1-34800614?marketId=1.248546073",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Defensor Sporting - Wanderers (Uru)",
+                "url": "https://www.wickspin24.live/#/full-market/1-34789857?marketId=1.248427884",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Hercules - CD Municipal Limeno",
+                "url": "https://www.wickspin24.live/#/full-market/1-34806702?marketId=1.248610808",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Atletico Nacional - Alianza FC (Pan)",
+                "url": "https://www.wickspin24.live/#/full-market/1-34802407?marketId=1.248568928",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Juventus FC (W) - S.L. Benfica (W)",
+                "url": "https://www.wickspin24.live/#/full-market/1-34813133?marketId=1.248684975",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "La Equidad - Once Caldas",
+                "url": "https://www.wickspin24.live/#/full-market/1-34788017?marketId=1.248402597",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "General Caballero - Nacional (Par)",
+                "url": "https://www.wickspin24.live/#/full-market/1-34791389?marketId=1.248681100",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Sao Paulo (W) - Colo Colo (W)",
+                "url": "https://www.wickspin24.live/#/full-market/1-34813950?marketId=1.248700932",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Atletico Huila - Barranquilla",
+                "url": "https://www.wickspin24.live/#/full-market/1-34799264?marketId=1.248544610",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "CA San Lorenzo de Almagro (W) - Club Olimpia Women",
+                "url": "https://www.wickspin24.live/#/full-market/1-34814013?marketId=1.248695432",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Cambridge Utd - Luton",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815287?marketId=1.248704033",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Wigan - Wolves U21",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815100?marketId=1.248703049",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Wycombe - Fulham U21",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815095?marketId=1.248702959",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Arnett Gardens FC - Treasure Beach FC",
+                "url": "https://www.wickspin24.live/#/full-market/1-34814205?marketId=1.248693384",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Harbour View FC - Dunbeholden FC",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815912?marketId=1.248713322",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Deportivo Cali (W) - Club Nacional de Football (W)",
+                "url": "https://www.wickspin24.live/#/full-market/1-34814000?marketId=1.248695522",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Chesterfield - Burton Albion",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815263?marketId=1.248703534",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Salford City - Stockport",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815298?marketId=1.248703853",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Grimsby - Doncaster",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815211?marketId=1.248703355",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Leyton Orient - Crawley Town",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815332?marketId=1.248704301",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Cheltenham - Bristol Rovers",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815302?marketId=1.248703763",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "Libertad Limpeno (W) - Universidad de Chile (W)",
+                "url": "https://www.wickspin24.live/#/full-market/1-34813975?marketId=1.248700842",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815361?marketId=1.248704571",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815374?marketId=1.248704481",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "",
+                "url": "https://www.wickspin24.live/#/full-market/1-34815327?marketId=1.248704391",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "",
+                "url": "https://www.wickspin24.live/#/full-market/1-34816688?marketId=1.248727346",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "",
+                "url": "https://www.wickspin24.live/#/full-market/1-34816687?marketId=1.248726953",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "",
+                "url": "https://www.wickspin24.live/#/full-market/1-34816697?marketId=1.248727436",
+                "fancy_bet": false,
+                "sportsbook": false
+            },
+            {
+                "match": "",
+                "url": "https://www.wickspin24.live/#/full-market/1-34806422?marketId=1.248611461",
+                "fancy_bet": false,
+                "sportsbook": false
+            }
+        ]
+    }
+]

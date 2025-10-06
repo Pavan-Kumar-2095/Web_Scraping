@@ -1,33 +1,10 @@
 [
     {
-        "sport": "Cricket",
-        "matches": [
-            {
-                "match": "New Zealand W - South Africa W",
-                "url": "https://www.wickspin24.live/#/full-market/4-34804951?marketId=1.248593187",
-                "fancy_bet": true,
-                "sportsbook": true
-            },
-            {
-                "match": "Zimbabwe W - United Arab Emirates W",
-                "url": "https://www.wickspin24.live/#/full-market/4-34812399?marketId=1.248690169",
-                "fancy_bet": true,
-                "sportsbook": true
-            }
-        ]
-    },
-    {
         "sport": "Soccer",
         "matches": [
             {
                 "match": "Sandvikens - Orgryte",
                 "url": "https://www.wickspin24.live/#/full-market/1-34791469?marketId=1.248469534",
-                "fancy_bet": false,
-                "sportsbook": true
-            },
-            {
-                "match": "Landskrona - Varbergs BoIS",
-                "url": "https://www.wickspin24.live/#/full-market/1-34782068?marketId=1.248316112",
                 "fancy_bet": false,
                 "sportsbook": true
             },
@@ -44,8 +21,8 @@
                 "sportsbook": true
             },
             {
-                "match": "Hvidovre - Lyngby",
-                "url": "https://www.wickspin24.live/#/full-market/1-34790915?marketId=1.248456399",
+                "match": "Landskrona - Varbergs BoIS",
+                "url": "https://www.wickspin24.live/#/full-market/1-34782068?marketId=1.248316112",
                 "fancy_bet": false,
                 "sportsbook": true
             },
@@ -56,8 +33,127 @@
                 "sportsbook": true
             },
             {
+                "match": "Hvidovre - Lyngby",
+                "url": "https://www.wickspin24.live/#/full-market/1-34790915?marketId=1.248456399",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
                 "match": "Sarajevo - Zrinjski",
                 "url": "https://www.wickspin24.live/#/full-market/1-34812019?marketId=1.248667295",
+                "fancy_bet": false,
+                "sportsbook": true
+            }
+        ]
+    },
+    {
+        "sport": "Tennis",
+        "matches": [
+            {
+                "match": "Ju Boulais - Eva Bynoe",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813969?marketId=1.248692184",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "And Lazaro Garcia - T Zidansek",
+                "url": "https://www.wickspin24.live/#/full-market/2-34808528?marketId=1.248628622",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "To Paris - Ot Virtanen",
+                "url": "https://www.wickspin24.live/#/full-market/2-34809962?marketId=1.248647489",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Martinez - Ramos-Vinolas",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813037?marketId=1.248681693",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Ju Torres - Ign Monzon",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813805?marketId=1.248690324",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Ambrogi - B Torrealba",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813800?marketId=1.248690249",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "D King - Grumet",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814683?marketId=1.248698806",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "E Winter - Brumm",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814366?marketId=1.248695879",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Misolic - Bernet",
+                "url": "https://www.wickspin24.live/#/full-market/2-34809987?marketId=1.248647660",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Tirante - Thanos",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813795?marketId=1.248690244",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Tirante - Thanos",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813795?marketId=1.248690244",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Ke Miyoshi - Qu Vandecasteele",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814098?marketId=1.248692776",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Jul Stusek - Oks Selekhmeteva",
+                "url": "https://www.wickspin24.live/#/full-market/2-34808538?marketId=1.248628462",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Str Kirchheimer - Rog Pascual Ferra",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814387?marketId=1.248696037",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Ma Dodig - Eubanks",
+                "url": "https://www.wickspin24.live/#/full-market/2-34809997?marketId=1.248647653",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Gu Justo - Dickerson",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814103?marketId=1.248692816",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Ale Hernandez - Mateus Alves",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814351?marketId=1.248695792",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Kestelboim - Gima",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814346?marketId=1.248695791",
                 "fancy_bet": false,
                 "sportsbook": true
             }

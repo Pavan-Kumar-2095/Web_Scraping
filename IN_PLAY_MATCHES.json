@@ -3,9 +3,15 @@
         "sport": "Cricket",
         "matches": [
             {
-                "match": "Queensland Bulls - Tasmania Tigers",
-                "url": "https://www.wickspin24.live/#/full-market/4-34758555?marketId=1.248460244",
-                "fancy_bet": false,
+                "match": "New Zealand W - South Africa W",
+                "url": "https://www.wickspin24.live/#/full-market/4-34804951?marketId=1.248593187",
+                "fancy_bet": true,
+                "sportsbook": true
+            },
+            {
+                "match": "Zimbabwe W - United Arab Emirates W",
+                "url": "https://www.wickspin24.live/#/full-market/4-34812399?marketId=1.248690169",
+                "fancy_bet": true,
                 "sportsbook": true
             },
             {
@@ -21,44 +27,38 @@
                 "sportsbook": true
             },
             {
-                "match": "Gujarat (V) - Mumbai (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--54539?marketId=-54894",
+                "match": "Bengaluru (V) - Mumbai (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--54630?marketId=-54985",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Rajshahi Division - Barishal Division",
-                "url": "https://www.wickspin24.live/#/full-market/4--54546?marketId=-54901",
+                "match": "Rajasthan (V) - Gujarat (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--54646?marketId=-55001",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Chennai (V) - Kolkata (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--54554?marketId=-54909",
+                "match": "Rajasthan (V) - Punjab (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--54656?marketId=-55011",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Lucknow (V) - Rajasthan (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--54562?marketId=-54917",
+                "match": "Pakistan (V) - Sri Lanka (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--54658?marketId=-55013",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Sri Lanka (V) - West Indies (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--54570?marketId=-54925",
+                "match": "SA Legends (V) - SL Legends (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--54659?marketId=-55014",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Hyderabad (V) - Chennai (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--54573?marketId=-54928",
-                "fancy_bet": false,
-                "sportsbook": true
-            },
-            {
-                "match": "NZ Legends (V) - SA Legends (V)",
-                "url": "https://www.wickspin24.live/#/full-market/11205870--54574?marketId=-54929",
+                "match": "Hyderabad (V) - Bengaluru (V)",
+                "url": "https://www.wickspin24.live/#/full-market/11205870--54661?marketId=-55016",
                 "fancy_bet": false,
                 "sportsbook": true
             }
@@ -68,98 +68,86 @@
         "sport": "Tennis",
         "matches": [
             {
-                "match": "F Auger-Aliassime - J De Jong",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808259?marketId=1.248624708",
+                "match": "Uchijima - Xin Wang",
+                "url": "https://www.wickspin24.live/#/full-market/2-34812189?marketId=1.248667697",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Majchrzak - Alex de Minaur",
-                "url": "https://www.wickspin24.live/#/full-market/2-34807871?marketId=1.248620619",
+                "match": "Davidovich Fokina - Medvedev",
+                "url": "https://www.wickspin24.live/#/full-market/2-34808747?marketId=1.248631375",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Mertens - Poli Kudermetova",
-                "url": "https://www.wickspin24.live/#/full-market/2-34812233?marketId=1.248668826",
+                "match": "Mrva - Coulibaly",
+                "url": "https://www.wickspin24.live/#/full-market/2-34812694?marketId=1.248675327",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "K Siniakova - Di Shnaider",
-                "url": "https://www.wickspin24.live/#/full-market/2-34812194?marketId=1.248668122",
+                "match": "Alexandrova - Vi Mboko",
+                "url": "https://www.wickspin24.live/#/full-market/2-34808292?marketId=1.248624968",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Ju Shang - Borges",
-                "url": "https://www.wickspin24.live/#/full-market/2-34809185?marketId=1.248636807",
+                "match": "Travaglia - Martin Tiffon",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813027?marketId=1.248681682",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Ri Noguchi - S Fomin",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808983?marketId=1.248634248",
+                "match": "Ch Broom - Ol Crawford",
+                "url": "https://www.wickspin24.live/#/full-market/2-34812684?marketId=1.248675374",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Shapovalov - Lehecka",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808091?marketId=1.248623633",
+                "match": "Dar Semenistaja - Ye Kotliar",
+                "url": "https://www.wickspin24.live/#/full-market/2-34812573?marketId=1.248673155",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Aoran Wang - Yevseyev",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808978?marketId=1.248634326",
+                "match": "Glinka - Vylegzhanin",
+                "url": "https://www.wickspin24.live/#/full-market/2-34814136?marketId=1.248692866",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "V Gracheva - Je Bouzas Maneiro",
-                "url": "https://www.wickspin24.live/#/full-market/2-34812199?marketId=1.248668287",
+                "match": "G Maristany Zuleta De R - Iren Burillo",
+                "url": "https://www.wickspin24.live/#/full-market/2-34808533?marketId=1.248628286",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Bolt - Ma Zhukov",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808993?marketId=1.248634420",
+                "match": "Ig Buse - Llamas Ruiz",
+                "url": "https://www.wickspin24.live/#/full-market/2-34813032?marketId=1.248681762",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Ti Zhang - A Barrera",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808998?marketId=1.248634338",
+                "match": "Cri Diaz Adrover - An Kucmova",
+                "url": "https://www.wickspin24.live/#/full-market/2-34812604?marketId=1.248673548",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Kubler - Kasid Samrej",
-                "url": "https://www.wickspin24.live/#/full-market/2-34810277?marketId=1.248649766",
+                "match": "Moller - Lopez Montagud",
+                "url": "https://www.wickspin24.live/#/full-market/2-34810100?marketId=1.248649187",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Xiaof Wang - Hy Chung",
-                "url": "https://www.wickspin24.live/#/full-market/2-34810267?marketId=1.248649762",
+                "match": "Arnaud Bailly - Adrian Andreev",
+                "url": "https://www.wickspin24.live/#/full-market/2-34812699?marketId=1.248675393",
                 "fancy_bet": false,
                 "sportsbook": true
             },
             {
-                "match": "Ts Huang - Uchiyama",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808988?marketId=1.248634183",
-                "fancy_bet": false,
-                "sportsbook": true
-            },
-            {
-                "match": "Jasika - Li Xiao",
-                "url": "https://www.wickspin24.live/#/full-market/2-34810282?marketId=1.248649891",
-                "fancy_bet": false,
-                "sportsbook": true
-            },
-            {
-                "match": "Zhu - Bar Biryukov",
-                "url": "https://www.wickspin24.live/#/full-market/2-34808963?marketId=1.248634167",
+                "match": "P Tsitsipas - Strombachs",
+                "url": "https://www.wickspin24.live/#/full-market/2-34812689?marketId=1.248675325",
                 "fancy_bet": false,
                 "sportsbook": true
             }
