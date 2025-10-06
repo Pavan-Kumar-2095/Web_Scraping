@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-10-06T07:14:35.246063Z",
+  "markets": [
+    {
+      "market": "Match Result",
+      "bets": [
+        {
+          "bet": "Vitesse",
+          "odds": "2.75",
+          "status": "active"
+        },
+        {
+          "bet": "Draw",
+          "odds": "3.7",
+          "status": "active"
+        },
+        {
+          "bet": "Den Bosch",
+          "odds": "2.33",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Half-time Totals Over/Under +1",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "1.47",
+          "status": "active"
+        },
+        {
+          "bet": "Under",
+          "odds": "2.5",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "market": "Half-time Totals Over/Under +1.25",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "Under",
+          "odds": "",
+          "status": "suspended"
+        }
+      ]
+    },
+    {
+      "market": "Half-time Totals Over/Under +1.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "Under",
+          "odds": "",
+          "status": "suspended"
+        }
+      ]
+    },
+    {
+      "market": "Half-time Totals Over/Under +1.75",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "Under",
+          "odds": "",
+          "status": "suspended"
+        }
+      ]
+    }
+  ]
+}

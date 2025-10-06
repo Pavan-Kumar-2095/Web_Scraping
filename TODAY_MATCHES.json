@@ -1,0 +1,66 @@
+[
+    {
+        "sport": "Cricket",
+        "matches": [
+            {
+                "match": "New Zealand W - South Africa W",
+                "url": "https://www.wickspin24.live/#/full-market/4-34804951?marketId=1.248593187",
+                "fancy_bet": true,
+                "sportsbook": true
+            },
+            {
+                "match": "Zimbabwe W - United Arab Emirates W",
+                "url": "https://www.wickspin24.live/#/full-market/4-34812399?marketId=1.248690169",
+                "fancy_bet": true,
+                "sportsbook": true
+            }
+        ]
+    },
+    {
+        "sport": "Soccer",
+        "matches": [
+            {
+                "match": "Sandvikens - Orgryte",
+                "url": "https://www.wickspin24.live/#/full-market/1-34791469?marketId=1.248469534",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Landskrona - Varbergs BoIS",
+                "url": "https://www.wickspin24.live/#/full-market/1-34782068?marketId=1.248316112",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Otelul Galati - FC Metaloglobus Bucuresti",
+                "url": "https://www.wickspin24.live/#/full-market/1-34790163?marketId=1.248430494",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Botosani - UTA Arad",
+                "url": "https://www.wickspin24.live/#/full-market/1-34790928?marketId=1.248456491",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Hvidovre - Lyngby",
+                "url": "https://www.wickspin24.live/#/full-market/1-34790915?marketId=1.248456399",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Vitesse Arnhem - Den Bosch",
+                "url": "https://www.wickspin24.live/#/full-market/1-34791463?marketId=1.248468616",
+                "fancy_bet": false,
+                "sportsbook": true
+            },
+            {
+                "match": "Sarajevo - Zrinjski",
+                "url": "https://www.wickspin24.live/#/full-market/1-34812019?marketId=1.248667295",
+                "fancy_bet": false,
+                "sportsbook": true
+            }
+        ]
+    }
+]

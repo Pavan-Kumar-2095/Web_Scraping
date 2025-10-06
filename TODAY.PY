@@ -10,7 +10,7 @@ from selenium.webdriver.chrome.options import Options
 
 from WikSpinLiv_2 import scrape_wickspin_live
 from WikSpinLiv_2_Premium import scrape_premium_data
-from WikSpinLiv_1 import scrape_data  # Update this to your actual module if needed
+from TODAY_MATCHES import scrape_data  # Update this to your actual module if needed
 
 
 # Helper for timestamps
@@ -53,7 +53,8 @@ def process_match_forever(sport, match):
     match_name = sanitize_filename(match.get("match", "unknown_match"))
     url = match.get("url")
     fancy_bet = match.get("fancy_bet", False)
-    sport_dir = Path("Scrapped") / sanitize_filename(sport)
+    sportsbook = match.get("sportsbook", False)
+    sport_dir = Path("TODAY_Scrapped") / sanitize_filename(sport)
     sport_dir.mkdir(parents=True, exist_ok=True)
 
     premium_output = sport_dir / f"{match_name}_premium.json"
@@ -76,15 +77,16 @@ def process_match_forever(sport, match):
                         driver=driver
                     )
                     print(f"[{now()}] ✅ Wickspin scrape cycle complete: {match_name}")
-                # else:
-                #     scrape_premium_data(
-                #         loop_interval=0.5,
-                #         main_url=url,
-                #         output_file=str(premium_output),
-                #         run_forever=False,
-                #         driver=driver
-                #     )
-                #     print(f"[{now()}] ✅ Premium scrape cycle complete: {match_name}")
+                if sportsbook :
+                    scrape_premium_data(
+                        loop_interval=0.0,
+                        main_url=url,
+                        output_file=str(premium_output),
+                        run_forever=False,
+                        driver=driver,
+                        headless=True
+                    )
+                    print(f"[{now()}] ✅ Premium scrape cycle complete: {match_name}")
             except Exception as e:
                 print(f"[{now()}] ❌ Error scraping {match_name}: {e}")
                 # Restart driver if error
@@ -112,7 +114,7 @@ def watch_for_new_matches(json_file, existing_matches_set, check_interval=60):  
                     sport = sport_entry.get("sport", "Unknown")
                     matches = sport_entry.get("matches", [])
                     for match in matches:
-                        if match.get("fancy_bet", False):
+                        if match.get("fancy_bet", False) or match.get("sportsbook", False):
                             match_id = f"{sport}|{match.get('match', '')}|{match.get('url', '')}"
                             if match_id not in existing_matches_set:
                                 print(f"[{now()}] ➕ New match detected: {match.get('match')} in {sport}. Starting scraper thread.")
@@ -145,7 +147,7 @@ initial_scrape_done = threading.Event()
 if __name__ == "__main__":
     threads = []
     existing_matches_set = set()
-    json_file = "WikSpinLiv_1.json"
+    json_file = "TODAY_MATCHES.json"
     json_path = Path(json_file)
 
     def periodic_scraper_loop():
@@ -191,115 +193,3 @@ if __name__ == "__main__":
             time.sleep(1)
     except KeyboardInterrupt:
         print("\n🛑 Exiting... All threads will stop automatically.")
-
-
-# import threading
-# import time
-# import json
-# from datetime import datetime
-# from pathlib import Path
-
-# from selenium import webdriver
-# from selenium.webdriver.chrome.options import Options
-
-# from WikSpinLiv_2 import scrape_wickspin_live
-# from WikSpinLiv_2_Premium import scrape_premium_data
-
-# def load_matches_from_json(file_path):
-#     try:
-#         with open(file_path, 'r', encoding='utf-8') as f:
-#             return json.load(f)
-#     except Exception as e:
-#         print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Failed to load JSON: {e}")
-#         return []
-
-# def sanitize_filename(name):
-#     return "".join(c for c in name if c.isalnum() or c in (" ", "-", "_")).rstrip()
-
-# def create_driver():
-#     options = Options()
-#     options.add_argument('--headless=new')
-#     options.add_argument('--disable-gpu')
-#     options.add_argument('--no-sandbox')
-#     options.add_argument('--disable-dev-shm-usage')
-#     options.add_argument('--disable-software-rasterizer')
-#     options.add_argument('--disable-webgl')
-#     options.add_argument('--enable-unsafe-swiftshader')
-#     options.add_argument('--window-size=1920,1080')
-#     options.add_argument('--log-level=3')
-#     return webdriver.Chrome(options=options)
-
-# def process_match_forever(sport, match):
-#     match_name = sanitize_filename(match.get("match", "unknown_match"))
-#     url = match.get("url")
-#     fancy_bet = match.get("fancy_bet", False)
-#     sport_dir = Path("Scrapped") / sanitize_filename(sport)
-#     sport_dir.mkdir(parents=True, exist_ok=True)
-
-#     premium_output = sport_dir / f"{match_name}_premium.json"
-#     wickspin_output = sport_dir / f"{match_name}_wickspin.json"
-
-#     print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 Starting continuous scrape for: {match_name} | Sport: {sport} | Fancy Bet: {fancy_bet}")
-
-#     driver = create_driver()
-
-#     try:
-#         while True:
-#             try:
-#                 if fancy_bet:
-#                     scrape_wickspin_live(
-#                         main_url=url,
-#                         output_file=str(wickspin_output),
-#                         update_interval=0.2,
-#                         headless=True,
-#                         run_forever=False,
-#                         driver=driver
-#                     )
-#                     print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Wickspin scrape cycle complete: {match_name}")
-#                 else:
-#                     scrape_premium_data(
-#                         loop_interval=0.5,
-#                         main_url=url,
-#                         output_file=str(premium_output),
-#                         run_forever=False,
-#                         driver=driver
-#                     )
-#                     print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ Premium scrape cycle complete: {match_name}")
-#             except Exception as e:
-#                 print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ Error scraping {match_name}: {e}")
-
-#             time.sleep(2)
-#     finally:
-#         driver.quit()
-#         print(f"[{datetime.now().strftime('%H:%M:%S')}] 🛑 Driver quit for match: {match_name}")
-
-# if __name__ == "__main__":
-#     json_file = "WikSpinLiv_1.json"
-#     data = load_matches_from_json(json_file)
-
-#     if not data:
-#         print(f"[{datetime.now().strftime('%H:%M:%S')}] ⚠️ No data found in {json_file}")
-#         exit()
-
-#     threads = []
-
-#     for sport_entry in data:
-#         sport = sport_entry.get("sport", "Unknown")
-#         matches = sport_entry.get("matches", [])
-#         for match in matches:
-#             thread = threading.Thread(
-#                 target=process_match_forever,
-#                 args=(sport, match),
-#                 daemon=True
-#             )
-#             thread.start()
-#             threads.append(thread)
-
-#     print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ All match threads started. Scraping continuously...")
-
-#     try:
-#         while True:
-#             time.sleep(1)
-#     except KeyboardInterrupt:
-#         print("\n🛑 Exiting... All threads will stop automatically.")
-

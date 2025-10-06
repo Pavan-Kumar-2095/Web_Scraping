@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-10-06T07:14:30.233225Z",
+  "markets": [
+    {
+      "market": "Match Result",
+      "bets": [
+        {
+          "bet": "FC Botosani",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "Draw",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "AFC UTA Arad",
+          "odds": "",
+          "status": "suspended"
+        }
+      ]
+    },
+    {
+      "market": "Half-time Totals Over/Under +0.5",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "Under",
+          "odds": "",
+          "status": "suspended"
+        }
+      ]
+    },
+    {
+      "market": "Half-time Totals Over/Under +0.75",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "Under",
+          "odds": "",
+          "status": "suspended"
+        }
+      ]
+    },
+    {
+      "market": "Half-time Totals Over/Under +1",
+      "bets": [
+        {
+          "bet": "Over",
+          "odds": "",
+          "status": "suspended"
+        },
+        {
+          "bet": "Under",
+          "odds": "",
+          "status": "suspended"
+        }
+      ]
+    }
+  ]
+}

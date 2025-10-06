@@ -5,7 +5,7 @@ from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
-def scrape_premium_data(loop_interval=0.5, main_url=None, output_file=None, run_forever=True, driver=None):
+def scrape_premium_data(loop_interval=0.5, main_url=None, output_file=None, run_forever=True, driver=None ,  headless=True):
     if driver is None:
         raise ValueError("A Selenium WebDriver instance must be provided via the 'driver' argument.")
 

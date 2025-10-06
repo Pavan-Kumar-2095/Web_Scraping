@@ -31,10 +31,21 @@ def scrape_data():
         driver.get("https://www.wickspin24.live/#/sports")
         wait = WebDriverWait(driver, 20)
 
+        # Locate the 'Today' button by matching its text and class attributes
+        today_button = wait.until(EC.element_to_be_clickable(
+            (By.XPATH, "//section[@id='index-filter']//div[contains(@class,'text-15') and contains(text(),'Today')]")
+        ))
+
+        # Click the 'Today' button safely
+        safe_click(driver, today_button)
+        print("Clicked 'Today' filter")     
+        
+
         # Click 'All' filter
         all_button = wait.until(EC.element_to_be_clickable(
             (By.XPATH, "//ul[contains(@class,'sport-type-filter-ul')]//li[.//span[text()='All']]")
         ))
+
         safe_click(driver, all_button)
         print("Clicked 'All' filter")
 
@@ -60,6 +71,8 @@ def scrape_data():
             sections = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "mb-4")))
             section = sections[sport_index]
 
+            driver.execute_script("arguments[0].scrollIntoView({block: 'end'});", section)
+
             try:
                 sport_name = section.find_element(By.CSS_SELECTOR, ".text-event-tab-icon").text.strip()
                 print(f"Processing sport: {sport_name}")
@@ -82,7 +95,7 @@ def scrape_data():
                     print(f"  Match: {match_name}")
 
                     fancy_bet = bool(match.find_elements(By.CSS_SELECTOR, ".icon-fancybet"))
-                    # sportsbook = bool(match.find_elements(By.CSS_SELECTOR, ".icon-sportsbook"))
+                    sportsbook = bool(match.find_elements(By.CSS_SELECTOR, ".icon-sportsbook"))
 
                     # Try to click inner clickable element for better success
                     try:
@@ -102,7 +115,8 @@ def scrape_data():
                     sport_data["matches"].append({
                         "match": match_name,
                         "url": current_url,
-                        "fancy_bet": fancy_bet
+                        "fancy_bet": fancy_bet,
+                        "sportsbook": sportsbook
                     })
 
                     driver.back()
@@ -115,7 +129,7 @@ def scrape_data():
                 print(f"Error processing sport section '{sport_name}': {e}")
 
         # Save data to JSON file
-        with open("WikSpinLiv_1.json", "w", encoding="utf-8") as f:
+        with open("TODAY_MATCHES.json", "w", encoding="utf-8") as f:
             json.dump(all_sports, f, indent=4, ensure_ascii=False)
 
         print("✅ Data saved successfully")

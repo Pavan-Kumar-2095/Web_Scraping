@@ -1,0 +1,88 @@
+{
+  "exchange_odds": [
+    {
+      "team": "New Zealand W",
+      "back": {
+        "odds": "1.78",
+        "volume": "1,708.38"
+      },
+      "lay": {
+        "odds": "1.8",
+        "volume": "1,846.12"
+      }
+    },
+    {
+      "team": "South Africa W",
+      "back": {
+        "odds": "2.26",
+        "volume": "12.16"
+      },
+      "lay": {
+        "odds": "2.28",
+        "volume": "175.23"
+      }
+    }
+  ],
+  "fancy_markets": [
+    {
+      "title": "Total Match Wkts (NZ-W vs SA-W) Adv",
+      "status": "Active",
+      "no": {
+        "odds": "16",
+        "value": "100"
+      },
+      "yes": {
+        "odds": "17",
+        "value": "100"
+      }
+    },
+    {
+      "title": "Total Match Fours (NZ-W vs SA-W) Adv",
+      "status": "Active",
+      "no": {
+        "odds": "50",
+        "value": "100"
+      },
+      "yes": {
+        "odds": "53",
+        "value": "100"
+      }
+    },
+    {
+      "title": "Total Match Wides (NZ-W vs SA-W) Adv",
+      "status": "Active",
+      "no": {
+        "odds": "17",
+        "value": "100"
+      },
+      "yes": {
+        "odds": "19",
+        "value": "100"
+      }
+    },
+    {
+      "title": "Total Match Extras (NZ-W vs SA-W) Adv",
+      "status": "Active",
+      "no": {
+        "odds": "28",
+        "value": "100"
+      },
+      "yes": {
+        "odds": "30",
+        "value": "100"
+      }
+    },
+    {
+      "title": "Total Match Caught Outs (NZ-W vs SA-W) Adv",
+      "status": "Active",
+      "no": {
+        "odds": "9",
+        "value": "100"
+      },
+      "yes": {
+        "odds": "10",
+        "value": "100"
+      }
+    }
+  ]
+}
