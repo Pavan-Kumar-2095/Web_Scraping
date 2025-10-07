@@ -71,7 +71,7 @@ def process_match_forever(sport, match):
                     scrape_wickspin_live(
                         main_url=url,
                         output_file=str(wickspin_output),
-                        update_interval=0.0,
+                        update_interval=0.5,
                         headless=True,
                         run_forever=False,
                         driver=driver
@@ -79,7 +79,7 @@ def process_match_forever(sport, match):
                     print(f"[{now()}] ✅ Wickspin scrape cycle complete: {match_name}")
                 if sportsbook :
                     scrape_premium_data(
-                        loop_interval=0.0,
+                        loop_interval=0.5,
                         main_url=url,
                         output_file=str(premium_output),
                         run_forever=False,
